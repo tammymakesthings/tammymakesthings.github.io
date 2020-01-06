@@ -1,5 +1,5 @@
 title: New Project - fw_neopixel_pride
-date: 2018-08-30
+date: 2018-08-31
 author: Tammy
 category: projects
 tags: circuitpython,neopixel,wearables
