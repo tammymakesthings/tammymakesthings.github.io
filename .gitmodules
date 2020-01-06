@@ -4,3 +4,6 @@
 [submodule "pelican/plugins/pelican-page-hierarchy"]
 	path = pelican/plugins/pelican-page-hierarchy
 	url = https://github.com/akhayyat/pelican-page-hierarchy.git
+[submodule "pelican/plugins/pelican-gist"]
+	path = pelican/plugins/pelican-gist
+	url = https://github.com/streeter/pelican-gist.git
