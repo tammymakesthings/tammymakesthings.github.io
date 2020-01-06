@@ -1,2 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tammy Makes Things</title><link href="https://tammymakesthings.com/" rel="alternate"></link><link href="https://tammymakesthings.com/feeds/all.atom.xml" rel="self"></link><id>https://tammymakesthings.com/</id><updated>2020-01-06T00:00:00-07:00</updated><subtitle>hardware hacking, python, making stuff, etc.</subtitle><entry><title>Hello, and Pardon the Dust</title><link href="https://tammymakesthings.com/2020/2020-01-06-the-journey-begins.html" rel="alternate"></link><published>2020-01-06T00:00:00-07:00</published><updated>2020-01-06T00:00:00-07:00</updated><author><name>Tammy</name></author><id>tag:tammymakesthings.com,2020-01-06:/2020/2020-01-06-the-journey-begins.html</id><content type="html">&lt;p&gt;Welcome, and pardon the dust. More to come as soon as I finish migrating from&amp;nbsp;WordPress.&lt;/p&gt;</content><category term="misc"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tammy Makes Things</title><link href="https://tammymakesthings.com/" rel="alternate"></link><link href="https://tammymakesthings.com/feeds/all.atom.xml" rel="self"></link><id>https://tammymakesthings.com/</id><updated>2020-01-06T00:00:00-07:00</updated><subtitle>hardware hacking, python, making stuff, etc.</subtitle><entry><title>Hello, and Pardon the Dust</title><link href="https://tammymakesthings.com/2020/2020-01-06-pardon-the-dust.html" rel="alternate"></link><published>2020-01-06T00:00:00-07:00</published><updated>2020-01-06T00:00:00-07:00</updated><author><name>Tammy</name></author><id>tag:tammymakesthings.com,2020-01-06:/2020/2020-01-06-pardon-the-dust.html</id><content type="html">&lt;p&gt;Welcome, and pardon the dust. More to come as soon as I finish migrating from&amp;nbsp;WordPress.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>The Journey Begins</title><link href="https://tammymakesthings.com/2018/2018-08-30-the-journey-begins.html" rel="alternate"></link><published>2018-08-30T00:00:00-07:00</published><updated>2018-08-30T00:00:00-07:00</updated><author><name>Tammy</name></author><id>tag:tammymakesthings.com,2018-08-30:/2018/2018-08-30-the-journey-begins.html</id><summary type="html">&lt;p&gt;Welcome, and thanks for joining me on my maker journey. My intention is to
+write about the stuff that interests me as I re-immerse myself in making
+stuff. I know electronics and microcontrollers
+(&lt;a href="https://www.circuitpython.org/"&gt;CircuitPython&lt;/a&gt;,
+&lt;a href="https://www.arduino.cc/"&gt;Arduino&lt;/a&gt;, etc.) are going to be a major focus. I
+want to learn to use the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Welcome, and thanks for joining me on my maker journey. My intention is to
+write about the stuff that interests me as I re-immerse myself in making
+stuff. I know electronics and microcontrollers
+(&lt;a href="https://www.circuitpython.org/"&gt;CircuitPython&lt;/a&gt;,
+&lt;a href="https://www.arduino.cc/"&gt;Arduino&lt;/a&gt;, etc.) are going to be a major focus. I
+want to learn to use the cool tools in my local Makerspace:
+&lt;a href="https://en.wikipedia.org/wiki/3D_printing"&gt;3-D printer&lt;/a&gt;,
+&lt;a href="https://en.wikipedia.org/wiki/Laser_cutting"&gt;laser cutter&lt;/a&gt;,
+&lt;a href="https://en.wikipedia.org/wiki/CNC_router"&gt;&lt;span class="caps"&gt;CNC&lt;/span&gt; router&lt;/a&gt;. What else might be
+included? We’ll find out as we journey&amp;nbsp;together.&lt;/p&gt;
+&lt;p&gt;My history with making things is long and complicated. It’s ironic, in a way,
+because making stuff is something that runs in my family. Some of my earliest
+childhood comfort memories are tied to the smell of sawdust and my
+grandfather’s workshop with him. My grandmother spun wool and knit and wove
+fabric, and my mom’s been knitting for as long as I can remember. I have
+multiple published writers in my&amp;nbsp;family.&lt;/p&gt;
+&lt;p&gt;Since I was small, I was forever taking things apart to try to understand how
+they worked. I took a machine shop class in 8th grade and an electronics class
+in my sophomore year of high school. I designed and built a darkroom timer for
+the photo darkroom I made in my dad’s basement. Heck, I’ve made my living in
+the software and high tech industry for most of my adult&amp;nbsp;life.&lt;/p&gt;
+&lt;p&gt;But then, although I retained my interest in building and making and creating
+things, I drifted away from pursuing it. I stopped making&amp;nbsp;things.&lt;/p&gt;
+&lt;p&gt;Why? Because of all the people who told me &amp;#8220;that’s not something girls are
+interested in.&amp;#8221; Sometimes when I did try, it was &amp;#8220;I’d be glad to help you
+with your project – what are you wearing right now?&amp;#8221; Sometimes it was &amp;#8220;here
+are 30 questions about your knowledge while I condescendingly explain the
+basics to you and treat you like crap, because it’s clearly not possible for
+girls to know anything about this.&amp;#8221; Often, I was simply ignored and&amp;nbsp;excluded.&lt;/p&gt;
+&lt;p&gt;The messages were clear, unambiguous, and invalidating: People can be makers or
+women, but not both. And if I dared to try, what was in store for me was
+invalidation, condescension, disbelief, and sexism. Message received, loud and
+clear. For far too long and in too many parts of my life, I internalized those
+messages and took them to heart and let them become barriers. For far too
+long, I let society’s sexist messages squelch my desire to create, to build,
+to &lt;span class="caps"&gt;MAKE&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;And you know what? All of that is garbage. There are &lt;span class="caps"&gt;TONS&lt;/span&gt; of women, nonbinary
+people, and men who build stuff. Who know how to use tools. Who weld, who run
+a &lt;span class="caps"&gt;CNC&lt;/span&gt; mill and a 3-D printer. Who create robots and electronic stuff and
+mechanical gizmos. Just look at &lt;a href="http://louiselarson.com/"&gt;E. Louise Larson&lt;/a&gt;
+(Prototype), &lt;a href="https://www.adafruit.com/about"&gt;Limor Fried&lt;/a&gt; (Adafruit), or
+&lt;a href="https://hackerlab.org/en/directory/profile/24535519/gina-lujan"&gt;Gina Lujan&lt;/a&gt;
+(Hacker&amp;nbsp;Lab).&lt;/p&gt;
+&lt;p&gt;So, I’m going to learn the skills I want to learn, explore, create, make. I’m
+going to encourage other women, non-binary people, kiddos, and really everyone
+to follow your passions and interests wherever they lead, with reckless
+abandon. And I’m emphatically and unequivocally rejecting all that ridiculous
+and toxic gender stereotyping and norm setting. It’s nonsense, and I refuse to
+play. If I want to learn how to make things out of wires and circuits, or
+metal, or wood, or use a laser cutter, I’m not letting &amp;#8220;girls can’t&amp;#8221; or &amp;#8220;girls
+shouldn’t&amp;#8221; stand in my way. Not ever&amp;nbsp;again.&lt;/p&gt;
+&lt;p&gt;What do I want to create? Right now, I just want to learn about the universe
+of what’s possible. All engines, ahead&amp;nbsp;full!&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>New Project - fw_neopixel_pride</title><link href="https://tammymakesthings.com/2018/2018-08-31-new-projectneopixel-pride.html" rel="alternate"></link><published>2018-08-30T00:00:00-07:00</published><updated>2018-08-30T00:00:00-07:00</updated><author><name>Tammy</name></author><id>tag:tammymakesthings.com,2018-08-30:/2018/2018-08-31-new-projectneopixel-pride.html</id><summary type="html">&lt;h1&gt;New Project -&amp;nbsp;fw_neopixel_pride&lt;/h1&gt;
+&lt;p&gt;I&amp;#8217;ve uploaded a guide for my latest project. I call it &lt;code&gt;fw_neopxiel_pride&lt;/code&gt;,
+and it&amp;#8217;s a simple piece of wearable jewelry for &lt;span class="caps"&gt;LGBTQ&lt;/span&gt; Pride month, built with
+a microcontroller and CircuitPython. The project guide is
+&lt;a href="/projects/fw-neopixel-pride/index.html"&gt;here&lt;/a&gt;, and you can find the code on
+&lt;a href="https://github.com/tammymakesthings/fw_neopixel_pride"&gt;GitHub&lt;/a&gt;. Check it …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;New Project -&amp;nbsp;fw_neopixel_pride&lt;/h1&gt;
+&lt;p&gt;I&amp;#8217;ve uploaded a guide for my latest project. I call it &lt;code&gt;fw_neopxiel_pride&lt;/code&gt;,
+and it&amp;#8217;s a simple piece of wearable jewelry for &lt;span class="caps"&gt;LGBTQ&lt;/span&gt; Pride month, built with
+a microcontroller and CircuitPython. The project guide is
+&lt;a href="/projects/fw-neopixel-pride/index.html"&gt;here&lt;/a&gt;, and you can find the code on
+&lt;a href="https://github.com/tammymakesthings/fw_neopixel_pride"&gt;GitHub&lt;/a&gt;. Check it out,
+and Happy&amp;nbsp;Pride!&lt;/p&gt;</content><category term="projects"></category><category term="circuitpython"></category><category term="neopixel"></category><category term="wearables"></category></entry></feed>
