@@ -5,8 +5,6 @@ category: projects
 tags: circuitpython,neopixel,wearables
 status: published
 
-# New Project - fw_neopixel_pride
-
 I've uploaded a guide for my latest project. I call it `fw_neopxiel_pride`,
 and it's a simple piece of wearable jewelry for LGBTQ Pride month, built with
 a microcontroller and CircuitPython. The project guide is
