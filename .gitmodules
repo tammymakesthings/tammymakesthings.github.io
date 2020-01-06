@@ -1,0 +1,9 @@
+[submodule "pelican/themes/blue-penguin"]
+	path = pelican/themes/blue-penguin
+	url = git@github.com:jody-frankowski/blue-penguin.git
+[submodule "pelican/plugins/pelican-page-hierarchy"]
+	path = pelican/plugins/pelican-page-hierarchy
+	url = git@github.com:akhayyat/pelican-page-hierarchy.git
+[submodule "pelican/plugins/pelican-gist"]
+	path = pelican/plugins/pelican-gist
+	url = git@github.com:streeter/pelican-gist.git
