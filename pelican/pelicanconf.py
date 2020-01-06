@@ -5,9 +5,22 @@ from __future__ import unicode_literals
 AUTHOR = 'Tammy Cravit'
 SITENAME = 'Tammy Makes Things'
 SITESUBTITLE = 'hardware hacking, python, making stuff, etc.'
-SITEURL = 'https://tammymakesthings.com'
+
 GITHUB_URL = 'https://github.com/tammymakesthings'
 TWITTER_USERNAME = 'maker_tammy'
+BROWSER_COLOR = '#330F54'
+ROBOTS = 'index, follow'
+COPYRIGHT_YEAR = 2016
+PYGMENTS_STYLE = 'monokai'
+
+MAIN_MENU = True
+DISPLAY_PAGES_ON_MENU = False
+MENUITEMS = (
+    ('Archives', '/archives.html'),
+    ('Categories', '/categories.html'),
+    ('Projects', '/projects/index.html'),
+    ('Contact', '/contact/index.html'),
+)
 
 PATH = 'content'
 OUTPUT_PATH = '..'
@@ -21,7 +34,10 @@ STATIC_PATHS = ['images',
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/custom.css': {'path': 'static/custom.css'},
 }
+
+DELETE_OUTPUT_DIRECTORY = False
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
@@ -34,9 +50,9 @@ CATEGORY_URL = 'category/{slug}.html'
 TAG_SAVE_AS = 'tag/{slug}.html'
 TAG_URL = 'tag/{slug}.html'
 
-THEME = 'themes/blue-penguin'
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
+THEME = '/home/tammy/pelican-themes/flex'
+MAIN_MENU = True
+
 IGNORE_FILES = ['.#*', '__pycache__']
 TYPOGRIFY = True
 WITH_FUTURE_DATES = False
@@ -58,10 +74,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('Projects', '/projects/index.html'),
+    ('&nbsp;', '#'),
+    ('GitHub', 'https://github.com/tammymakesthings'),
+    ('Contact', '/contact/index.html'),
+)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -70,4 +88,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

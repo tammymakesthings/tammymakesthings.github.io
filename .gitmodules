@@ -7,3 +7,6 @@
 [submodule "pelican/plugins/pelican-gist"]
 	path = pelican/plugins/pelican-gist
 	url = https://github.com/streeter/pelican-gist.git
+[submodule "pelican/themes/pelican-blueidea"]
+	path = pelican/themes/pelican-blueidea
+	url = https://github.com/nasskach/pelican-blueidea.git
