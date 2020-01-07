@@ -454,4 +454,9 @@ fieldset {
   border-color: #fff;
   border-image: none;
   border: none;
+  vertical-align: text-top;
+}
+fieldset .submit {
+  width: 200px;
+  height: 40px;
 }
