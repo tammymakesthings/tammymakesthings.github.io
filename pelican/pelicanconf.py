@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Tammy Cravit'
 SITENAME = 'Tammy Makes Things'
+SITETITLE = 'Tammy Makes Things'
 SITESUBTITLE = 'hardware hacking, python, making stuff, etc.'
 
 GITHUB_URL = 'https://github.com/tammymakesthings'
