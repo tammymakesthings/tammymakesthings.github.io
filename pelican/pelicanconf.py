@@ -52,7 +52,7 @@ CATEGORY_URL = 'category/{slug}.html'
 TAG_SAVE_AS = 'tag/{slug}.html'
 TAG_URL = 'tag/{slug}.html'
 
-THEME = '/home/tammy/projects/tammymakesthings.github.io/pelican/themes/flex'
+THEME = '/home/tammy/projects/tammymakesthings.github.io/pelican/themes/tcflex'
 MAIN_MENU = True
 
 IGNORE_FILES = ['.#*', '__pycache__']

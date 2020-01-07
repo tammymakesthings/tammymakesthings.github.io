@@ -85,9 +85,9 @@ else
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
-stylesheet: $(BASEDIR)/themes/flex/static/stylesheet/style.less
-	lessc $(BASEDIR)/themes/flex/static/stylesheet/style.less > $(BASEDIR)/themes/flex/static/stylesheet/style.css
-	yui-compressor $(BASEDIR)/themes/flex/static/stylesheet/style.css > $(BASEDIR)/themes/flex/static/stylesheet/style.min.css
+stylesheet: $(BASEDIR)/themes/tcflex/static/stylesheet/style.less
+	lessc $(BASEDIR)/themes/tcflex/static/stylesheet/style.less > $(BASEDIR)/themes/tcflex/static/stylesheet/style.css
+	yui-compressor $(BASEDIR)/themes/tcflex/static/stylesheet/style.css > $(BASEDIR)/themes/tcflex/static/stylesheet/style.min.css
 
 publish: stylesheet
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
