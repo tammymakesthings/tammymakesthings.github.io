@@ -447,6 +447,13 @@ ul.social a.sc-flickr {
     height: 90px;
   }
 }
+fieldset {
+  border-width: 0px;
+  border-style: none;
+  border-color: #fff;
+  border-image: none;
+  border: none;
+}
 form {
   display: block;
   border: 1px solid #333;
@@ -457,6 +464,7 @@ form fieldset {
   border-style: none;
   border-color: #fff;
   border-image: none;
+  border: none;
 }
 form fieldset label {
   border: none;
