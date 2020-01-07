@@ -453,7 +453,10 @@ form {
 }
 form fieldset {
   display: inline-block;
-  border: none;
+  border-width: 0px;
+  border-style: none;
+  border-color: #fff;
+  border-image: none;
 }
 form fieldset label {
   border: none;
@@ -470,7 +473,15 @@ form fieldset label {
   user-select: none;
   width: 175px;
   text-align: right;
+  border-width: 0px;
+  border-style: none;
+  border-color: #fff;
+  border-image: none;
 }
 form fieldset input {
   border: none;
+  border-width: 0px;
+  border-style: none;
+  border-color: #fff;
+  border-image: none;
 }
