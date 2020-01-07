@@ -448,41 +448,10 @@ ul.social a.sc-flickr {
   }
 }
 fieldset {
-  border-width: 0px;
-  border-style: none;
-  border-color: #fff;
-  border-image: none;
-  border: none;
-}
-form {
-  display: block;
-  border: 1px solid #333;
-}
-form fieldset {
   display: block;
   border-width: 0px;
   border-style: none;
   border-color: #fff;
   border-image: none;
   border: none;
-}
-form fieldset label {
-  border: none;
-  font-weight: bold;
-  display: inline-block;
-  padding-right: 10px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 175px;
-  text-align: right;
-  border-width: 0px;
-  border-style: none;
-  border-color: #fff;
-  border-image: none;
 }
