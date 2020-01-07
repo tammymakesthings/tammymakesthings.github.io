@@ -1,6 +1,7 @@
 PY?=/home/tammy/.pyenv/shims/python
 PELICAN?=/home/tammy/.pyenv/shims/pelican
 RM?=/bin/rm
+CP?=/bin/cp
 GIT?=/usr/bin/git
 DIRNAME?=/usr/bin/dirname
 
@@ -86,6 +87,7 @@ endif
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	$(CP) $(INPUTDIR)/extra/* $(OUTPUTDIR)
 
 github: publish
 	git add $(OUTPUTDIR)
