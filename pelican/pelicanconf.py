@@ -75,15 +75,20 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('Projects', '/projects/index.html'),
+    ('Blog', '/'),
+    ('Projects', '/projects/'),
+    ('About Me', '/about/'),
     ('&nbsp;', '#'),
     ('GitHub', 'https://github.com/tammymakesthings'),
-    ('Contact', '/contact/index.html'),
+    ('Contact', '/contact/'),
 )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('twitter', 'https://twitter.com/maker_tammy'),
+    ('github', 'https://github.com/tammymakesthings'),
+    ('keybase', 'https://keybase.io/tammymakesthings'),
+)
 
 DEFAULT_PAGINATION = 10
 

@@ -5,10 +5,10 @@ from __future__ import unicode_literals
 # This file is only used if you use `make publish` or
 # explicitly specify it as your config file.
 
+from pelicanconf import *
 import os
 import sys
 sys.path.append(os.curdir)
-from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://tammymakesthings.com'
@@ -21,5 +21,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+DISQUS_SITENAME = "tammy-makes-things"
+GOOGLE_ANALYTICS = "UA-155602571-1"
