@@ -1,15 +1,18 @@
-PY?=python3
-PELICAN?=pelican
+PY?=/home/tammy/.pyenv/shims/python
+PELICAN?=/home/tammy/.pyenv/shims/pelican
+RM?=/bin/rm
+GIT?=/usr/bin/git
+DIRNAME?=/usr/bin/dirname
+
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/..
+OUTPUTDIR=$(DIRNAME) "$(BASEDIR)/.."
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=master
-
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -44,7 +47,18 @@ html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	$(RM) $(OUTPUTDIR)/*.html
+	$(RM) $(OUTPUTDIR)/*.xml
+	$(RM) $(OUTPUTDIR)/CNAME $(OUTPUTDIR)/robots.txt
+	$(RM) -r $(OUTPUTDIR)/20* \
+			 $(OUTPUTDIR)/author \
+			 $(OUTPUTDIR)/category \
+			 $(OUTPUTDIR)/contact \
+			 $(OUTPUTDIR)/feeds \
+			 $(OUTPUTDIR)/images  \
+			 $(OUTPUTDIR)/projects \
+			 $(OUTPUTDIR)/tag \
+			 $(OUTPUTDIR)/theme
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -63,7 +77,6 @@ else
 	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b 0.0.0.0
 endif
 
-
 devserver:
 ifdef PORT
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
@@ -75,7 +88,8 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	git add $(OUTPUTDIR)
+	git commit -m "Snapshot for publish to github at `date`"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
