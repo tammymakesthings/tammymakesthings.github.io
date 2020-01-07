@@ -8,7 +8,7 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(DIRNAME) "$(BASEDIR)/.."
+OUTPUTDIR=$(HOME)/projects/tammymakesthings.github.io
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
