@@ -7,5 +7,4 @@ status: published
 
 These are some of my projects. Click on the name of a project to learn more.
 
--   [fw_neopixel_pride](/projects/fw-neopixel-pride/index.html) - A
-    NeoPixel-Based Badge for Pride!
+- [fw_neopixel_pride](/projects/fw-neopixel-pride/index.html) - A NeoPixel-Based Badge for Pride!

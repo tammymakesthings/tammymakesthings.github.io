@@ -18,6 +18,7 @@ DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ('Archives', '/archives.html'),
     ('Categories', '/categories.html'),
+    ('Tags', '/tags.html'),
     ('Projects', '/projects/index.html'),
     ('Contact', '/contact/index.html'),
 )
@@ -77,9 +78,9 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ('Blog', '/'),
     ('Projects', '/projects/'),
-    ('About Me', '/about/'),
+    ('Links', '/links/'),
     ('&nbsp;', '#'),
-    ('GitHub', 'https://github.com/tammymakesthings'),
+    ('About Me', '/about/'),
     ('Contact', '/contact/'),
 )
 
