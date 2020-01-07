@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tammy Makes Things - circuitpython</title><link href="https://tammymakesthings.com/" rel="alternate"></link><link href="https://tammymakesthings.com/feeds/circuitpython.atom.xml" rel="self"></link><id>https://tammymakesthings.com/</id><updated>2020-01-07T00:00:00-07:00</updated><subtitle>hardware hacking, python, making stuff, etc.</subtitle><entry><title>Thoughts on CircuitPython for 2020</title><link href="https://tammymakesthings.com/2020/2020-01-07-circuitpython-2020-thoughts.html" rel="alternate"></link><published>2020-01-07T00:00:00-07:00</published><updated>2020-01-07T00:00:00-07:00</updated><author><name>Tammy</name></author><id>tag:tammymakesthings.com,2020-01-07:/2020/2020-01-07-circuitpython-2020-thoughts.html</id><summary type="html">&lt;p&gt;Over on the &lt;a href="https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/"&gt;Adafruit blog&lt;/a&gt;,
+they asked &amp;#8220;what do you want from &lt;a href="https://circuitpython.org/"&gt;CircuitPython&lt;/a&gt;
+in 2020. For those that aren&amp;#8217;t familiar with it, CircuitPython is a project to
+allow programming of embedded microcontrollers in Python. It&amp;#8217;s pretty much
+wonderful, and I&amp;#8217;ve been using it for almost all of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over on the &lt;a href="https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/"&gt;Adafruit blog&lt;/a&gt;,
+they asked &amp;#8220;what do you want from &lt;a href="https://circuitpython.org/"&gt;CircuitPython&lt;/a&gt;
+in 2020. For those that aren&amp;#8217;t familiar with it, CircuitPython is a project to
+allow programming of embedded microcontrollers in Python. It&amp;#8217;s pretty much
+wonderful, and I&amp;#8217;ve been using it for almost all of my hardwre hacking of&amp;nbsp;late.&lt;/p&gt;
+&lt;p&gt;So here in no particular order are my thoughts for &lt;em&gt;#CircuitPython2020&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Projects you&amp;#8217;d like to&amp;nbsp;build&lt;/h2&gt;
+&lt;p&gt;I have two projects currently in flight, which I&amp;#8217;d like to kick into gear
+and finish in&amp;nbsp;2020:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;An as-yet unnamed gizmo to provide breathing support and pulse-ox monitoring
+    for people (especially kids) having asthma attacks. Finishing this is going
+    to require porting one of the &lt;span class="caps"&gt;MAXIM&lt;/span&gt;
+    &lt;a href="https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX30102.html"&gt;MAX3010x&lt;/a&gt;
+    Arduino drivers. This is something I&amp;#8217;m working&amp;nbsp;on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/tammymakesthings/dbagparker"&gt;dbagparker&lt;/a&gt;, a simple
+    project which uses a distance sensor to tell you how far away from the wall
+    you are when parking your car. I started designing this for Arduino, but I
+    think I&amp;#8217;m going to redesign for a CircuitPython board&amp;nbsp;instead.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have a few other ideas for stuff I&amp;#8217;d like to work on, but I&amp;#8217;d like to
+finish at least one of these&amp;nbsp;first.&lt;/p&gt;
+&lt;h2&gt;Things you think could be&amp;nbsp;easier&lt;/h2&gt;
+&lt;p&gt;Overall, CircuitPython is fantastic, and I definitely find it much easier and
+faster to build stuff than I did with Arduino/C. Some of that is my greater
+fluency with Python, but the dev/test cycle is just much more intuitive with
+CircuitPython. Still and all, there are a couple of things I think could be
+made&amp;nbsp;easier:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Dependency management&lt;/em&gt;: I don&amp;#8217;t necessarily think we should recreate the
+    whole &lt;code&gt;pip&lt;/code&gt; ecosystem, but making sure the right libraries are installed on
+    my boards and keeping those libraries updated is still a chore. The
+    &lt;a href="https://github.com/adafruit/circup"&gt;CircUp&lt;/a&gt; tool helps with the updating
+    part, but I&amp;#8217;d like a way that my CircuitPython programs could know what
+    libraries they need and make sure those are automatically&amp;nbsp;installed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Firmware updates&lt;/em&gt;: Downloading the CircuitPython .uf2 images for all of
+    the boards in my collection, resetting each one to get it into &lt;span class="caps"&gt;UF2&lt;/span&gt; mode,
+    making sure I copy the right firmware image to it, and then resetting again
+    and updating libraries is a laboriously manual process. In my ideal world,
+    there would be a workflow where I could run a listener script on my computer
+    (maybe in &lt;a href="https://codewith.mu/"&gt;Mu&lt;/a&gt;) and then plug in a board, hit the double
+    reset button, and have the script automatically download and flash the newest
+    firmware image, wait for the board to reset, and then automatically update
+    all of the libraries. When you have 10 or 20 CircuitPython devices, this would
+    make firmware updates waaaaaay&amp;nbsp;faster.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Library&amp;nbsp;improvements&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;displayio&lt;/code&gt; is a fantastic way to create UIs on boards with &lt;span class="caps"&gt;OLED&lt;/span&gt; displays,
+but it&amp;#8217;s taken me a long time and a lot of trial and error to figure out how
+to use it. I understand the flexibility that its paradigm of &lt;code&gt;Displays&lt;/code&gt; and
+&lt;code&gt;TileGrids&lt;/code&gt; and &lt;code&gt;Groups&lt;/code&gt; provides, but I&amp;#8217;d love a simpler layer for very
+common tasks, such as &amp;#8220;fill the screen with a solid color and write some
+text on top of it.&amp;#8221; I&amp;#8217;d also love it if there was a way for the library to
+know the device resolution and to describe the &lt;span class="caps"&gt;UI&lt;/span&gt; in a resolution-independent
+way, so if I switch my project from a
+&lt;a href="https://www.adafruit.com/product/4200"&gt;PiBadge&lt;/a&gt; to a
+&lt;a href="https://www.adafruit.com/product/3333"&gt;Circuit Playground Express&lt;/a&gt; with a
+&lt;a href="https://www.adafruit.com/product/4367"&gt;&lt;span class="caps"&gt;TFT&lt;/span&gt; Gizmo&lt;/a&gt;, I didn&amp;#8217;t have to rewrite
+all of my &lt;span class="caps"&gt;UI&lt;/span&gt;&amp;nbsp;code.&lt;/p&gt;
+&lt;h2&gt;In&amp;nbsp;closing&lt;/h2&gt;
+&lt;p&gt;I think CircuitPython is an amazing tool which makes the world of
+microcontrollers and hardware hacking so much more accessible for people who
+want to move beyond [MakeCode]. The ecosystem has grown by leaps and bounds
+in 2019, and I&amp;#8217;m excited to see what 2020 brings. I&amp;#8217;m also excited to increase
+my level of contribution in 2020, and if you use CircuitPython and love it you
+should think about &lt;a href="https://circuitpython.org/contributing"&gt;contributing&lt;/a&gt;&amp;nbsp;too!&lt;/p&gt;</content><category term="circuitpython"></category><category term="circuitpython"></category></entry></feed>

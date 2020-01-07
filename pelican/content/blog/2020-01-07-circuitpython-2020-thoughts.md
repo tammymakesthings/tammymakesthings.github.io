@@ -1,7 +1,7 @@
 title: Thoughts on CircuitPython for 2020
 category: circuitpython
 tags: circuitpython
-status: draft
+status: published
 date: 2020-01-07
 author: Tammy
 
