@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/font-awesome/css/solid.css">
+
+
+    <link href="https://tammymakesthings.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tammy Makes Things Atom">
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-155602571-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#330F54">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#330F54">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#330F54">
+
+<meta name="author" content="Tammy" />
+<meta name="description" content="Over on the Adafruit blog, they asked “what do you want from CircuitPython in 2020. For those that aren’t familiar with it, CircuitPython is a project to allow programming of embedded microcontrollers in Python. It’s pretty much wonderful, and I’ve been using it for almost all of …" />
+<meta name="keywords" content="circuitpython">
+
+
+<meta property="og:site_name" content="Tammy Makes Things"/>
+<meta property="og:title" content="Thoughts on CircuitPython for 2020"/>
+<meta property="og:description" content="Over on the Adafruit blog, they asked “what do you want from CircuitPython in 2020. For those that aren’t familiar with it, CircuitPython is a project to allow programming of embedded microcontrollers in Python. It’s pretty much wonderful, and I’ve been using it for almost all of …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://tammymakesthings.com/drafts/2020-01-07-circuitpython-2020-thoughts.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-01-07 00:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://tammymakesthings.com/author/tammy.html">
+<meta property="article:section" content="circuitpython"/>
+<meta property="article:tag" content="circuitpython"/>
+<meta property="og:image" content="">
+
+  <title>Tammy Makes Things &ndash; Thoughts on CircuitPython for 2020</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://tammymakesthings.com">
+        <img src="https://tammymakesthings.com/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://tammymakesthings.com"></a></h1>
+
+<p>hardware hacking, python, making stuff, etc.</p>
+      <nav>
+        <ul class="list">
+
+
+            <li><a target="_blank" href="/" >Blog</a></li>
+            <li><a target="_blank" href="/projects/" >Projects</a></li>
+            <li><a target="_blank" href="/links/" >Links</a></li>
+            <li><a target="_blank" href="#" >&nbsp;</a></li>
+            <li><a target="_blank" href="/about/" >About Me</a></li>
+            <li><a target="_blank" href="/contact/" >Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/maker_tammy" target="_blank">
+            <i class="fab fa-twitter">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-github" href="https://github.com/tammymakesthings" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-keybase" href="https://keybase.io/tammymakesthings" target="_blank">
+            <i class="fab fa-keybase">
+            </i>
+          </a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://tammymakesthings.com">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+      <a href="/projects/index.html">Projects</a>
+      <a href="/contact/index.html">Contact</a>
+
+      <a href="https://tammymakesthings.com/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="2020-01-07-circuitpython-2020-thoughts">Thoughts on CircuitPython for&nbsp;2020</h1>
+    <p>
+          Posted on Tue 07 January 2020 in <a href="https://tammymakesthings.com/category/circuitpython.html">circuitpython</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Over on the <a href="https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/">Adafruit blog</a>,
+they asked &#8220;what do you want from <a href="https://circuitpython.org/">CircuitPython</a>
+in 2020. For those that aren&#8217;t familiar with it, CircuitPython is a project to
+allow programming of embedded microcontrollers in Python. It&#8217;s pretty much
+wonderful, and I&#8217;ve been using it for almost all of my hardwre hacking of&nbsp;late.</p>
+<p>So here in no particular order are my thoughts for <em>#CircuitPython2020</em>.</p>
+<h2>Projects you&#8217;d like to&nbsp;build</h2>
+<p>I have two projects currently in flight, which I&#8217;d like to kick into gear
+and finish in&nbsp;2020:</p>
+<ul>
+<li>
+<p>An as-yet unnamed gizmo to provide breathing support and pulse-ox monitoring
+    for people (especially kids) having asthma attacks. Finishing this is going
+    to require porting one of the <span class="caps">MAXIM</span>
+    <a href="https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX30102.html">MAX3010x</a>
+    Arduino drivers. This is something I&#8217;m working&nbsp;on.</p>
+</li>
+<li>
+<p><a href="https://github.com/tammymakesthings/dbagparker">dbagparker</a>, a simple
+    project which uses a distance sensor to tell you how far away from the wall
+    you are when parking your car. I started designing this for Arduino, but I
+    think I&#8217;m going to redesign for a CircuitPython board&nbsp;instead.</p>
+</li>
+</ul>
+<p>I have a few other ideas for stuff I&#8217;d like to work on, but I&#8217;d like to
+finish at least one of these&nbsp;first.</p>
+<h2>Things you think could be&nbsp;easier</h2>
+<p>Overall, CircuitPython is fantastic, and I definitely find it much easier and
+faster to build stuff than I did with Arduino/C. Some of that is my greater
+fluency with Python, but the dev/test cycle is just much more intuitive with
+CircuitPython. Still and all, there are a couple of things I think could be
+made&nbsp;easier:</p>
+<ul>
+<li>
+<p><em>Dependency management</em>: I don&#8217;t necessarily think we should recreate the
+    whole <code>pip</code> ecosystem, but making sure the right libraries are installed on
+    my boards and keeping those libraries updated is still a chore. The
+    <a href="https://github.com/adafruit/circup">CircUp</a> tool helps with the updating
+    part, but I&#8217;d like a way that my CircuitPython programs could know what
+    libraries they need and make sure those are automatically&nbsp;installed.</p>
+</li>
+<li>
+<p><em>Firmware updates</em>: Downloading the CircuitPython .uf2 images for all of
+    the boards in my collection, resetting each one to get it into <span class="caps">UF2</span> mode,
+    making sure I copy the right firmware image to it, and then resetting again
+    and updating libraries is a laboriously manual process. In my ideal world,
+    there would be a workflow where I could run a listener script on my computer
+    (maybe in <a href="https://codewith.mu/">Mu</a>) and then plug in a board, hit the double
+    reset button, and have the script automatically download and flash the newest
+    firmware image, wait for the board to reset, and then automatically update
+    all of the libraries. When you have 10 or 20 CircuitPython devices, this would
+    make firmware updates waaaaaay&nbsp;faster.</p>
+</li>
+</ul>
+<h2>Library&nbsp;improvements</h2>
+<p><code>displayio</code> is a fantastic way to create UIs on boards with <span class="caps">OLED</span> displays,
+but it&#8217;s taken me a long time and a lot of trial and error to figure out how
+to use it. I understand the flexibility that its paradigm of <code>Displays</code> and
+<code>TileGrids</code> and <code>Groups</code> provides, but I&#8217;d love a simpler layer for very
+common tasks, such as &#8220;fill the screen with a solid color and write some
+text on top of it.&#8221; I&#8217;d also love it if there was a way for the library to
+know the device resolution and to describe the <span class="caps">UI</span> in a resolution-independent
+way, so if I switch my project from a
+<a href="https://www.adafruit.com/product/4200">PiBadge</a> to a
+<a href="https://www.adafruit.com/product/3333">Circuit Playground Express</a> with a
+<a href="https://www.adafruit.com/product/4367"><span class="caps">TFT</span> Gizmo</a>, I didn&#8217;t have to rewrite
+all of my <span class="caps">UI</span>&nbsp;code.</p>
+<h2>In&nbsp;closing</h2>
+<p>I think CircuitPython is an amazing tool which makes the world of
+microcontrollers and hardware hacking so much more accessible for people who
+want to move beyond [MakeCode]. The ecosystem has grown by leaps and bounds
+in 2019, and I&#8217;m excited to see what 2020 brings. I&#8217;m also excited to increase
+my level of contribution in 2020, and if you use CircuitPython and love it you
+should think about <a href="https://circuitpython.org/contributing">contributing</a>&nbsp;too!</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://tammymakesthings.com/tag/circuitpython.html">circuitpython</a>
+    </p>
+  </div>
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'tammy-makes-things';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>&copy;  2016</p>
+<p>    Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Tammy Makes Things ",
+  "url" : "https://tammymakesthings.com",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
