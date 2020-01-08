@@ -69,7 +69,7 @@ PLUGIN_PATHS = ["plugins", './plugins']
 PLUGINS = [
     'pelican-page-hierarchy',
     'pelican_youtube',
-    'ipynb.markup'
+    #'ipynb.markup'
 ]
 
 # Feed generation is usually not desired when developing
