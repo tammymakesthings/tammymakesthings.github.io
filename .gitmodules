@@ -12,4 +12,4 @@
 	url = https://github.com/nasskach/pelican-blueidea.git
 [submodule "pelican/plugins/ipynb"]
 	path = pelican/plugins/ipynb
-	url = git://github.com/danielfrg/pelican-ipynb.git
+	url = https://github.com/danielfrg/pelican-ipynb.git
