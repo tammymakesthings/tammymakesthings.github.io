@@ -78,7 +78,8 @@ all of my UI code.
 
 I think CircuitPython is an amazing tool which makes the world of
 microcontrollers and hardware hacking so much more accessible for people who
-want to move beyond [MakeCode]. The ecosystem has grown by leaps and bounds
-in 2019, and I'm excited to see what 2020 brings. I'm also excited to increase
-my level of contribution in 2020, and if you use CircuitPython and love it you
-should think about [contributing](https://circuitpython.org/contributing) too!
+want to move beyond [MakeCode](https://makecode.adafruit.com/). The ecosystem
+has grown by leaps and bounds in 2019, and I'm excited to see what 2020
+brings. I'm also excited to increase my level of contribution in 2020, and if
+you use CircuitPython and love it you should think about
+[contributing](https://circuitpython.org/contributing) too!
