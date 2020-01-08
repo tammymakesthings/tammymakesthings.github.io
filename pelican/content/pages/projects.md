@@ -1,4 +1,4 @@
-title: tammymakesthings: Projects
+title: Projects
 date: 2019-06-08
 author: Tammy
 status: published
