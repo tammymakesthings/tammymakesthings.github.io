@@ -24,6 +24,9 @@ MENUITEMS = (
     ('Contact', '/contact/index.html'),
 )
 
+MARKUP = ('md', 'ipynb')
+IPYNB_USE_METACELL = True
+
 PATH = 'content'
 OUTPUT_PATH = '..'
 ARTICLE_PATHS = ['blog']
@@ -55,17 +58,18 @@ TAG_URL = 'tag/{slug}.html'
 THEME = '/home/tammy/projects/tammymakesthings.github.io/pelican/themes/tcflex'
 MAIN_MENU = True
 
-IGNORE_FILES = ['.#*', '__pycache__']
+IGNORE_FILES = ['.#*', '__pycache__', '.ipynb_checkpoints']
 TYPOGRIFY = True
 WITH_FUTURE_DATES = False
 DEFAULT_DATE = 'fs'
 TIMEZONE = 'America/Phoenix'
 DEFAULT_LANG = 'en'
 
-PLUGIN_PATHS = ["plugins"]
+PLUGIN_PATHS = ["plugins", './plugins']
 PLUGINS = [
     'pelican-page-hierarchy',
-    #    'pelican-gist',
+    'pelican_youtube',
+    'ipynb.markup'
 ]
 
 # Feed generation is usually not desired when developing
