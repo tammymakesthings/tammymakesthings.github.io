@@ -10,6 +10,3 @@
 [submodule "pelican/themes/pelican-blueidea"]
 	path = pelican/themes/pelican-blueidea
 	url = https://github.com/nasskach/pelican-blueidea.git
-[submodule "pelican/plugins/ipynb"]
-	path = pelican/plugins/ipynb
-	url = https://github.com/danielfrg/pelican-ipynb.git

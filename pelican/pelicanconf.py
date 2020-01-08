@@ -24,9 +24,6 @@ MENUITEMS = (
     ('Contact', '/contact/index.html'),
 )
 
-MARKUP = ('md', 'ipynb')
-IPYNB_USE_METACELL = True
-
 PATH = 'content'
 OUTPUT_PATH = '..'
 ARTICLE_PATHS = ['blog']
@@ -69,7 +66,6 @@ PLUGIN_PATHS = ["plugins", './plugins']
 PLUGINS = [
     'pelican-page-hierarchy',
     'pelican_youtube',
-    #'ipynb.markup'
 ]
 
 # Feed generation is usually not desired when developing
