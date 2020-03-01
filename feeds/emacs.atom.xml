@@ -11,8 +11,8 @@ much more. First created in 1976, Emacs is built - and extensible - in
 the &lt;a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)"&gt;Lisp&lt;/a&gt;
 programming language. And this gives it an enormous amount of
 power. People have extended Emacs to include e-mail and newsgroup
-functionality, full-featured IDEs for programming, even 
-&lt;a href="https://orgmode.org/"&gt;an outlining solution&lt;/a&gt; that&amp;#8217;s become a life 
+functionality, full-featured IDEs for programming, even
+&lt;a href="https://orgmode.org/"&gt;an outlining solution&lt;/a&gt; that&amp;#8217;s become a life
 organizer and document publishing&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve been using Emacs on-and-off for decades, and I&amp;#8217;ve recently been
 getting &lt;em&gt;org-mode&lt;/em&gt; set up for both organizing my life and for some writing
@@ -23,13 +23,13 @@ hardware, software, and otherwise &amp;#8212;- and about tool&amp;nbsp;wars.&lt;
 its infancy. Home computers were just starting to join the Internet, and
 a lot of us that used &lt;a href="https://en.wikipedia.org/wiki/Unix"&gt;Unix&lt;/a&gt;-based
 computers did so through a command&amp;#8212;line interface and a dial-up terminal
-program. Back then, which text editor you used &amp;#8212;- Emacs or 
+program. Back then, which text editor you used &amp;#8212;- Emacs or
 &lt;a href="https://en.wikipedia.org/wiki/Vi"&gt;vi&lt;/a&gt; &amp;#8212;- was a topic of debate, argument,
 and sometimes holy&amp;nbsp;war.&lt;/p&gt;
 &lt;p&gt;Though the tech landscape has changed enormously since then, one of the
 continuing dynamics I still see is people arguing fervently online about
 which tool is &amp;#8220;the best&amp;#8221;. Python vs. Ruby vs. CLojure vs. whatever other
-programming language. Arduino vs. CircuitPython vs. C/C++. The best 
+programming language. Arduino vs. CircuitPython vs. C/C++. The best
 &lt;span class="caps"&gt;USB&lt;/span&gt; soldering iron. The right soldering station. The perfect 3-D printer
 and the One True slicing and modeling choices. But I think these arguments
 all miss the&amp;nbsp;point.&lt;/p&gt;
@@ -37,36 +37,36 @@ all miss the&amp;nbsp;point.&lt;/p&gt;
 coming back to Emacs because I&amp;#8217;ve been using it for nearly 30 years. For
 me, it&amp;#8217;s comfortable, like a well-worn pair of jeans. That doesn&amp;#8217;t mean
 I use it exclusively &amp;#8212; I&amp;#8217;m fairly comfortable with &lt;a href="https://en.wikipedia.org/wiki/Vi"&gt;vi&lt;/a&gt;
-and &lt;a href="https://en.wikipedia.org/wiki/TextMate"&gt;TextMate&lt;/a&gt; and 
+and &lt;a href="https://en.wikipedia.org/wiki/TextMate"&gt;TextMate&lt;/a&gt; and
 &lt;a href="https://www.sublimetext.com"&gt;SublimeText&lt;/a&gt; too. I think
 &lt;a href="https://code.visualstudio.com"&gt;VSCode&lt;/a&gt; is fantastic and use it regularly.
-3-D modeling software? I have &lt;a href="https://www.freecadweb.org"&gt;FreeCAD&lt;/a&gt; and 
-&lt;a href="https://www.openscad.org"&gt;OpenSCAD&lt;/a&gt; and 
-&lt;a href="https://www.autodesk.com/products/fusion-360/overview"&gt;Fusion 360&lt;/a&gt; 
-and use them&amp;nbsp;all. &lt;/p&gt;
+3-D modeling software? I have &lt;a href="https://www.freecadweb.org"&gt;FreeCAD&lt;/a&gt; and
+&lt;a href="https://www.openscad.org"&gt;OpenSCAD&lt;/a&gt; and
+&lt;a href="https://www.autodesk.com/products/fusion-360/overview"&gt;Fusion 360&lt;/a&gt;
+and use them&amp;nbsp;all.&lt;/p&gt;
 &lt;p&gt;In short, I&amp;#8217;m a big fan of picking the right tool for the job &lt;strong&gt;and the user&lt;/strong&gt;.
 What does that look like? For me, the right tool&amp;nbsp;is:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;em&gt;The tool that has the capability to do what you need it to.&lt;/em&gt; Ideally 
+&lt;p&gt;&lt;em&gt;The tool that has the capability to do what you need it to.&lt;/em&gt; Ideally
     without requiring you to use it in ways it wasn&amp;#8217;t well designed for.
     You &lt;em&gt;can&lt;/em&gt; pound a nail with the side of a chainsaw (but you might break
     the chainsaw). You &lt;em&gt;can&lt;/em&gt; make a tree fall down if you hit it with a
     hammer enough times. That doesn&amp;#8217;t mean those are the right tools for
     those jobs. This is why my grandfather had so many different hammers
-    and saws in his workshop &amp;#8212; he was a big fan of having exactly the 
+    and saws in his workshop &amp;#8212; he was a big fan of having exactly the
     right tool for each&amp;nbsp;job.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;The tool that gets out of your way.&lt;/em&gt; This doesn&amp;#8217;t mean it necessarily
-    just works out of the box. I&amp;#8217;ve done a lot of tweaking and coding to 
-    make Emacs work the way I want it to. But when I&amp;#8217;m in the groove, 
-    writing a blog post or hacking on code or capturing notes from a 
+    just works out of the box. I&amp;#8217;ve done a lot of tweaking and coding to
+    make Emacs work the way I want it to. But when I&amp;#8217;m in the groove,
+    writing a blog post or hacking on code or capturing notes from a
     meeting? In those moments I don&amp;#8217;t want to have to think about the
     tool. I just want it to enable me to do what I need&amp;nbsp;to.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;_The tool that you feel comfortable with._This is the big one. I
+&lt;p&gt;&lt;em&gt;The tool that you feel comfortable with.&lt;/em&gt; This is the big one. I
     remember being in my Grandpa&amp;#8217;s workshop with him as a small child.
     He was working on something and had a large, heavy hammer out. One
     I could barely lift. So he had a smaller, lighter hammer in the shop
