@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://tammymakesthings.com/theme/font-awesome/css/solid.css">
+
+
+    <link href="https://tammymakesthings.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tammy Makes Things Atom">
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-155602571-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#330F54">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#330F54">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#330F54">
+
+<meta name="author" content="Tammy" />
+<meta name="description" content="For those who aren’t familiar, Emacs is a text eeditor - and much more. First created in 1976, Emacs is built - and extensible - in the Lisp programming language. And this gives it an enormous amount of power. People have extended Emacs to include e-mail and newsgroup functionality, full-featured IDEs for …" />
+<meta name="keywords" content="emacs, tooling">
+
+
+<meta property="og:site_name" content="Tammy Makes Things"/>
+<meta property="og:title" content="Of Emacs and Tools"/>
+<meta property="og:description" content="For those who aren’t familiar, Emacs is a text eeditor - and much more. First created in 1976, Emacs is built - and extensible - in the Lisp programming language. And this gives it an enormous amount of power. People have extended Emacs to include e-mail and newsgroup functionality, full-featured IDEs for …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://tammymakesthings.com/2020/2020-03-01-of-emacs-and-tools.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-03-01 00:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://tammymakesthings.com/author/tammy.html">
+<meta property="article:section" content="emacs"/>
+<meta property="article:tag" content="emacs"/>
+<meta property="article:tag" content="tooling"/>
+<meta property="og:image" content="">
+
+  <title>Tammy Makes Things &ndash; Of Emacs and Tools</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://tammymakesthings.com">
+        <img src="https://tammymakesthings.com/theme/img/profile.png" alt="Tammy Makes Things" title="Tammy Makes Things">
+      </a>
+      <h1><a href="https://tammymakesthings.com">tammy makes things</a></h1>
+
+<p>hardware hacking, python, making stuff, etc.</p>
+      <nav>
+        <ul class="list">
+
+
+            <li><a target="_blank" href="/" >Blog</a></li>
+            <li><a target="_blank" href="/projects/" >Projects</a></li>
+            <li><a target="_blank" href="/links/" >Links</a></li>
+            <li><a target="_blank" href="#" >&nbsp;</a></li>
+            <li><a target="_blank" href="/about/" >About Me</a></li>
+            <li><a target="_blank" href="/contact/" >Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/maker_tammy" target="_blank">
+            <i class="fab fa-twitter">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-github" href="https://github.com/tammymakesthings" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-keybase" href="https://keybase.io/tammymakesthings" target="_blank">
+            <i class="fab fa-keybase">
+            </i>
+          </a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://tammymakesthings.com">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+      <a href="/projects/index.html">Projects</a>
+      <a href="/contact/index.html">Contact</a>
+
+      <a href="https://tammymakesthings.com/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="2020-03-01-of-emacs-and-tools">Of Emacs and&nbsp;Tools</h1>
+    <p>
+          Posted on Sun 01 March 2020 in <a href="https://tammymakesthings.com/category/emacs.html">emacs</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>For those who aren&#8217;t familiar,
+<a href="https://www.gnu.org/software/emacs/">Emacs</a> is a text eeditor - and
+much more. First created in 1976, Emacs is built - and extensible - in
+the <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>
+programming language. And this gives it an enormous amount of
+power. People have extended Emacs to include e-mail and newsgroup
+functionality, full-featured IDEs for programming, even 
+<a href="https://orgmode.org/">an outlining solution</a> that&#8217;s become a life 
+organizer and document publishing&nbsp;tool.</p>
+<p>I&#8217;ve been using Emacs on-and-off for decades, and I&#8217;ve recently been
+getting <em>org-mode</em> set up for both organizing my life and for some writing
+projects. I&#8217;ll be blogging more about that, but that&#8217;s not what I want
+to talk about today. Today my thoughts are about the tools we use &#8212;-
+hardware, software, and otherwise &#8212;- and about tool&nbsp;wars.</p>
+<p>When I was in college (more years ago than I care to admit) Linux was in
+its infancy. Home computers were just starting to join the Internet, and
+a lot of us that used <a href="https://en.wikipedia.org/wiki/Unix">Unix</a>-based
+computers did so through a command&#8212;line interface and a dial-up terminal
+program. Back then, which text editor you used &#8212;- Emacs or 
+<a href="https://en.wikipedia.org/wiki/Vi">vi</a> &#8212;- was a topic of debate, argument,
+and sometimes holy&nbsp;war.</p>
+<p>Though the tech landscape has changed enormously since then, one of the
+continuing dynamics I still see is people arguing fervently online about
+which tool is &#8220;the best&#8221;. Python vs. Ruby vs. CLojure vs. whatever other
+programming language. Arduino vs. CircuitPython vs. C/C++. The best 
+<span class="caps">USB</span> soldering iron. The right soldering station. The perfect 3-D printer
+and the One True slicing and modeling choices. But I think these arguments
+all miss the&nbsp;point.</p>
+<p>Frankly, I don&#8217;t believe there&#8217;s One True Choice for any tool. I keep
+coming back to Emacs because I&#8217;ve been using it for nearly 30 years. For
+me, it&#8217;s comfortable, like a well-worn pair of jeans. That doesn&#8217;t mean
+I use it exclusively &#8212; I&#8217;m fairly comfortable with <a href="https://en.wikipedia.org/wiki/Vi">vi</a>
+and <a href="https://en.wikipedia.org/wiki/TextMate">TextMate</a> and 
+<a href="https://www.sublimetext.com">SublimeText</a> too. I think
+<a href="https://code.visualstudio.com">VSCode</a> is fantastic and use it regularly.
+3-D modeling software? I have <a href="https://www.freecadweb.org">FreeCAD</a> and 
+<a href="https://www.openscad.org">OpenSCAD</a> and 
+<a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360</a> 
+and use them&nbsp;all. </p>
+<p>In short, I&#8217;m a big fan of picking the right tool for the job <strong>and the user</strong>.
+What does that look like? For me, the right tool&nbsp;is:</p>
+<ol>
+<li>
+<p><em>The tool that has the capability to do what you need it to.</em> Ideally 
+    without requiring you to use it in ways it wasn&#8217;t well designed for.
+    You <em>can</em> pound a nail with the side of a chainsaw (but you might break
+    the chainsaw). You <em>can</em> make a tree fall down if you hit it with a
+    hammer enough times. That doesn&#8217;t mean those are the right tools for
+    those jobs. This is why my grandfather had so many different hammers
+    and saws in his workshop &#8212; he was a big fan of having exactly the 
+    right tool for each&nbsp;job.</p>
+</li>
+<li>
+<p><em>The tool that gets out of your way.</em> This doesn&#8217;t mean it necessarily
+    just works out of the box. I&#8217;ve done a lot of tweaking and coding to 
+    make Emacs work the way I want it to. But when I&#8217;m in the groove, 
+    writing a blog post or hacking on code or capturing notes from a 
+    meeting? In those moments I don&#8217;t want to have to think about the
+    tool. I just want it to enable me to do what I need&nbsp;to.</p>
+</li>
+<li>
+<p>_The tool that you feel comfortable with._This is the big one. I
+    remember being in my Grandpa&#8217;s workshop with him as a small child.
+    He was working on something and had a large, heavy hammer out. One
+    I could barely lift. So he had a smaller, lighter hammer in the shop
+    too. That was <em>my</em> hammer, and when I wanted to build something he&#8217;d
+    bring it out. He never argued that his hammer was the One True Hammer,
+    that I should just suck it up and use that one. The right tool for
+    me wasn&#8217;t the right tool for him &#8212; and that&#8217;s okay. That&#8217;s why
+    there are many different&nbsp;tools.</p>
+</li>
+</ol>
+<p>As I said, I&#8217;m going to be doing some blogging about Emacs in amidst
+my other writings. If you use Emacs, hopefully they&#8217;ll be of interest.
+But if not, if you use other tools you&#8217;re happy with? That&#8217;s totally
+fine. Tools are the means to an end, not the end in and of itself. (At
+least, not unless tool-building <em>is</em> the end you&#8217;re working&nbsp;toward).</p>
+<p>Use what enables you to get the thing done. At the end of the day,
+that is the true bottom&nbsp;line.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://tammymakesthings.com/tag/emacs.html">emacs</a>
+      <a href="https://tammymakesthings.com/tag/tooling.html">tooling</a>
+    </p>
+  </div>
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'tammy-makes-things';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>&copy;  2016</p>
+<p>    Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Tammy Makes Things ",
+  "url" : "https://tammymakesthings.com",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>

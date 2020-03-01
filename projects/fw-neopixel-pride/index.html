@@ -281,12 +281,12 @@ I&#8217;ll talk through that in a&nbsp;second.</p>
     single character, and whose values are a tuple containing the <span class="caps">RGB</span> value
     of the color. For&nbsp;example:</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;R&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
     <span class="s1">&#39;G&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
     <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 
 
 <ul>
@@ -302,10 +302,10 @@ I&#8217;ll talk through that in a&nbsp;second.</p>
     so different designs can have different color maps if need be.) For example,
     the traditional Pride flag is designed like&nbsp;so:</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="err">patterns = {</span>
+<div class="highlight"><pre><span></span><code><span class="err">patterns = {</span>
 <span class="err">    pride_flag&#39;: {&#39;pattern&#39;: &#39;-ABCDEF-&#39;, &#39;colors&#39;: flag_colors},</span>
 <span class="err">}</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>You can add as many designs as you want, up to the limits of available
@@ -459,10 +459,10 @@ the following&nbsp;functions:</p>
 </ul>
 <p>Finally, we have the code which kicks off the script and makes it keep running.
 It&#8217;s pretty simple, and looks like&nbsp;this:</p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">renderAllPatterns</span><span class="p">(</span><span class="n">patterns</span><span class="p">)</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>And that&#8217;s all there&nbsp;is!</p>
@@ -488,7 +488,7 @@ you&#8217;re not running on Circuit Python hardware. I suppose I could have made
 hardware-dependent thing was the NeoPixel, so I opted to use the <code>pixels</code>
 object&#8217;s value&nbsp;instead.</p>
 <p>My probe for Circuit Python hardware looks like&nbsp;this:</p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">implementation</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;circuitpython&quot;</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">implementation</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;circuitpython&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">time</span>
     <span class="kn">import</span> <span class="nn">board</span>
     <span class="kn">import</span> <span class="nn">neopixel</span>
@@ -497,18 +497,18 @@ object&#8217;s value&nbsp;instead.</p>
     <span class="n">neopixel_pin</span> <span class="o">=</span> <span class="n">board</span><span class="o">.</span><span class="n">D6</span>
     <span class="n">pixels</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">neopixel_pin</span><span class="p">,</span> <span class="p">(</span><span class="n">NUM_ROWS</span> <span class="o">*</span> <span class="n">NUM_COLS</span><span class="p">),</span>
                                <span class="n">brightness</span><span class="o">=</span><span class="n">PATTERN_INTENSITY</span><span class="p">,</span> <span class="n">auto_write</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>An example of a place where I care about the presence or absence of the
 hardware is in <code>set_column()</code>, where I do the&nbsp;following:</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">set_column</span><span class="p">(</span><span class="n">display_column</span><span class="p">,</span> <span class="n">rgb_value</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">set_column</span><span class="p">(</span><span class="n">display_column</span><span class="p">,</span> <span class="n">rgb_value</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Called set_column(</span><span class="si">{0}</span><span class="s1">, </span><span class="si">{1}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">display_column</span><span class="p">,</span> <span class="n">rgb_value</span><span class="p">))</span>
     <span class="k">if</span> <span class="n">pixels</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">NUM_ROWS</span><span class="p">):</span>
             <span class="n">which_pixel</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">NUM_COLS</span><span class="p">)</span> <span class="o">+</span> <span class="n">display_column</span>
             <span class="n">pixels</span><span class="p">[</span><span class="n">which_pixel</span><span class="p">]</span> <span class="o">=</span> <span class="n">rgb_value</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>If this code is running on Circuit Python hardware, it will update the
