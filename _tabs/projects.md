@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Projects
-permalink: /projects/
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 1
 ---
+
 ## CircuitPython Projects
 [CircuitPython][circuitpython] is a version of the [Python][python] programming language that runs on microcontrollers. It provides an easy development and testing cycle, a [REPL][repl] for debugging and exploration, and a robust set of libraries to support sensors, displays, and other peripherals. These are some of my CircuitPython-based projects.
 
@@ -28,7 +29,10 @@ permalink: /projects/
 
 - [Twitch Streaming][twitch] - find me on Twitch at [https://twitch.tv/tammymakesthings][twitch]. See [here](/projects/streaming/) for my current Twitch schedule and upcoming streams.
 
-_[work in progress and coming soon icons created by Freepik - Flaticons][iconswip]._
+<p style="font-size: 8pt">
+work in progress and coming soon icons created by
+<a href="https://www.flaticon.com/free-icons/work-in-progress">Freepik - Flaticons</a>
+</p>
 
 [adafruitmidi]: https://github.com/adafruit/Adafruit_CircuitPython_MIDI
 [chineseoscope]: https://www.amazon.com/dp/B09X385FPV/
