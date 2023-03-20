@@ -1,28 +1,18 @@
-The Journey Begins
-==================
-
-tags
-
-:   musings
-
-category
-
-:   musings
-
-date
-
-:   2018-08-31
+---
+title: "The Journey Begins"
+date: 2018-08-30
+categories: [ musings ]
+tags: [ musings ]
+---
 
 Welcome, and thanks for joining me on my maker journey. My intention is
 to write about the stuff that interests me as I re-immerse myself in
 making stuff. I know electronics and microcontrollers
-([CircuitPython](https://www.circuitpython.org/),
-[Arduino](https://www.arduino.cc/), etc.) are going to be a major focus.
-I want to learn to use the cool tools in my local Makerspace: [3-D
-printer](https://en.wikipedia.org/wiki/3D_printing), [laser
-cutter](https://en.wikipedia.org/wiki/Laser_cutting), [CNC
-router](https://en.wikipedia.org/wiki/CNC_router). What else might be
-included? We'll find out as we journey together.
+([CircuitPython][circuitpython], [Arduino][arduino], etc.) are going
+to be a major focus. I want to learn to use the cool tools in my local
+Makerspace: [3-D printer][3dprinter], [laser cutter][lasercutter],
+[CNC router][cncrouter]. What else might be included? We'll find out as we
+journey together.
 
 Since I'm starting afresh, I thought I'd talk about my journey as a
 maker, and what brought us together in this little corner of cyberspace.
@@ -64,11 +54,10 @@ squelch my desire to create, to build, to MAKE.
 And you know what? All of that is garbage. There are TONS of women,
 nonbinary people, and men who build stuff. Who know how to use tools.
 Who weld, who run a CNC mill and a 3-D printer. Who create robots and
-electronic stuff and mechanical gizmos. Just look at [E. Louise
-Larson](http://louiselarson.com/) (Prototype), [Limor
-Fried](https://www.adafruit.com/about) (Adafruit), or [Gina
-Lujan](https://hackerlab.org/en/directory/profile/24535519/gina-lujan)
-(Hacker Lab).
+electronic stuff and mechanical gizmos. Just look at
+[E. Louise Larson][louise-larson] (Prototype),
+[Limor Fried][limor-fried] (Adafruit), or
+[Gina Lujan][gina-lujan] (Hacker Lab).
 
 So, I'm going to learn the skills I want to learn, explore, create,
 make. I'm going to encourage other women, non-binary people, kiddos, and
@@ -82,3 +71,12 @@ way. Not ever again.
 
 What do I want to create? Right now, I just want to learn about the
 universe of what's possible. All engines, ahead full!
+
+[3dprinter]: https://en.wikipedia.org/wiki/3D_printing
+[arduino]: https://www.arduino.cc/
+[circuitpython]: https://www.circuitpython.org/
+[cncrouter]: https://en.wikipedia.org/wiki/CNC_router
+[gina-lujan]: https://hackerlab.org/en/directory/profile/24535519/gina-lujan
+[lasercutter]: https://en.wikipedia.org/wiki/Laser_cutting
+[limor-fried]: https://www.adafruit.com/about
+[louise-larson]: http://louiselarson.com/

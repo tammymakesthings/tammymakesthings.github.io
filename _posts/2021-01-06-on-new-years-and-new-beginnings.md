@@ -1,13 +1,11 @@
-On New Years and New Beginnings
-===============================
+---
+title: "On New Years and New Beginnings"
+date: 2021-01-06
+categories: [Musings]
+tags: [musings, blogging]
+---
 
-category
-
-:   musings
-
-tags
-
-:   musings, blogging
+[blogging]: https://edidiongasikpo.com/why-is-it-important-to-blog-as-a-developer
 
 As you might have noticed, this blog has been quiet for a while. I had
 lots of good stuff happening last year, and lots of ideas planned. But
@@ -18,15 +16,14 @@ got busy.
 The new year has brought a little breathing room, and I'd started
 thinking about how to get going with the blog again. So it was very
 timely indeed that I read a blog post by Edidiong Asikpo, a developer
-and blogger from Nigeria, titled [The Importance of Blogging as a
-Developer](https://edidiongasikpo.com/why-is-it-important-to-blog-as-a-developer).
+and blogger from Nigeria, titled
+[The Importance of Blogging as a Developer][blogging].
 It's definitely worth a read, but it got me thinking about my own
 reasons why I wanted to blog, and why I want to resume the habit.
 
 Here are some of my reasons:
 
-It helps me hone my skills and develop new ones.
-------------------------------------------------
+## It helps me hone my skills and develop new ones
 
 They say that one of the best ways to deeply learn a skill is to try to
 teach it to someone else. That's why the mantra in medical school is
@@ -38,8 +35,7 @@ to learn new things. If I have topics I'm interested in, the opportunity
 to blog about them is a great motivator for taking some time to dive in
 and learn about them.
 
-It's a chance to give back and connect with the community.
-----------------------------------------------------------
+## It's a chance to give back and connect with the community
 
 Let's face it: When I'm looking for the answer to a technical question,
 a good portion of the time, Google will surface a blog post someone has
@@ -49,8 +45,7 @@ knowledge. Writing a blog also gives me an excuse to read other tech
 blogs, connect with other tech people, and share/amplify other voices in
 the community.
 
-I enjoy writing and teaching.
------------------------------
+## I enjoy writing and teaching
 
 There's not a lot to say here. Like many techies (especially, I think,
 those on the autism and ADHD spectra) I've got a slightly repressed
@@ -60,8 +55,7 @@ in. So my blog -- where I can write about whatever interests me, and
 there's nobody telling me it's boring or weird -- is a space to let that
 side of me out.
 
-It's a visible marketing tool.
-------------------------------
+## It's a visible marketing tool
 
 To be clear, I'm not actively marketing anything in particular at the
 moment. I'm not job--hunting, and I'm not selling anything. But both of
