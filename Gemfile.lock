@@ -46,9 +46,6 @@ GEM
       webrick (~> 1.7)
     jekyll-archives (2.2.1)
       jekyll (>= 3.6, < 5.0)
-    jekyll-extlinks (0.0.5)
-      jekyll (~> 4.0)
-      nokogiri (~> 1.10.4)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -128,7 +125,6 @@ DEPENDENCIES
   jektex
   jekyll (~> 4.3)
   jekyll-archives
-  jekyll-extlinks
   jekyll-gist
   jekyll-paginate-v2
   jekyll-pre-commit
