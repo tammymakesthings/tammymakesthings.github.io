@@ -6,7 +6,7 @@ gem 'jekyll', '~> 4.3'
 group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-gist'
-  gem 'jekyll-paginate-v2'
+  gem 'jekyll-paginate'
   gem 'jekyll-pre-commit'
   gem 'jekyll-redirect-from'
   gem 'jekyll-relative-links'
