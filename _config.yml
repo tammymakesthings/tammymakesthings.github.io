@@ -103,7 +103,6 @@ comments:
 plugins:
   - jekyll-twitch
   - jekyll-relative-links
-  - jektex
 
 extlinks:
   attributes: {rel: nofollow, target: _blank}

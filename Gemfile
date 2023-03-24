@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3'
 group :jekyll_plugins do
-  gem 'jektex'
   gem 'jekyll-archives'
   gem 'jekyll-gist'
   gem 'jekyll-paginate-v2'

@@ -5,12 +5,10 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
-    digest (3.1.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    execjs (2.8.1)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
@@ -20,14 +18,9 @@ GEM
     gemoji (3.0.1)
     google-protobuf (3.22.2-x86_64-darwin)
     google-protobuf (3.22.2-x86_64-linux)
-    htmlentities (4.3.4)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    jektex (0.1.0)
-      digest (~> 3.0, >= 3.0.0)
-      execjs (~> 2.8, >= 2.8.1)
-      htmlentities (~> 4.3, >= 4.3.4)
     jekyll (4.3.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -122,7 +115,6 @@ PLATFORMS
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
-  jektex
   jekyll (~> 4.3)
   jekyll-archives
   jekyll-gist
