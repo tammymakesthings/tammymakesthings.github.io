@@ -102,7 +102,6 @@ comments:
 
 plugins:
   - jekyll-twitch
-  - jekyll-extlinks
   - jekyll-relative-links
   - jektex
 

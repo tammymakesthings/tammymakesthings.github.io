@@ -1,0 +1,35 @@
+name: Build and Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - uses: jeffreytse/jekyll-deploy-action@0.4.0
+        with:
+          provider: 'github'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ''
+          branch: 'main'
+          jekyll_src: './'
+          jekyll_cfg: '_config.yml'
+          jekyll_baseurl: ''
+          bundler_ver: '>=0'
+          cname: ''
+          actor: ''
+          pre_build_commands: ''
+      
