@@ -13,7 +13,6 @@ group :jekyll_plugins do
   # Lock jekyll-sass-converter to 2.x on Linux-musl
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
-  gem 'jekyll-spaceship'
   gem 'jekyll-theme-chirpy'
   gem 'jekyll-twitch'
 end

@@ -202,30 +202,6 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-jekyll-spaceship:
-  processors:
-    - table-processor
-    - mermaid-processor
-    - media-processor
-  mermaid-processor:
-    mode: default
-    css:
-      class: mermaid
-    syntax:
-      code: 'mermaid!'
-      custom: ['@startmermaid', '@endmermaid']
-    config:
-      theme: default
-    src: https://mermaid.ink/svg/
-  media-processor:
-    default:
-      id: 'media-{id}'
-      class: 'media'
-      width: '95%'
-      height: 350
-      frameborder: 0
-      style: 'text-align: center; max-width: 600px; outline: none'
-      allow: 'encrypted-media; picture-in-picture'
 
   pre-commit:
     - check: FrontMatterVariableExists
