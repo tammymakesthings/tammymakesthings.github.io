@@ -7,6 +7,6 @@ pin: true
 ---
 
 Welcome back to Tammy's corner of the Internet. I'm currently respinning this site to be less 
-blogging-focused and more project-focused, so expect [blog posts](/posts/) to be infrequent. In 
+blogging-focused and more project-focused, so expect [blog posts](/archives/) to be infrequent. In 
 the meantime, please use the links at the left side of the page to navigate what's here.
 
