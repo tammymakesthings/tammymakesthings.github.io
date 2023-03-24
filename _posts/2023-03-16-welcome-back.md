@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Welcome Back!"
 date:   2023-03-16 12:36:18 -0700
-categories: [admin]
+categories: [Musings]
+tags: [musings, administrivia]
 pin: true
 ---
 

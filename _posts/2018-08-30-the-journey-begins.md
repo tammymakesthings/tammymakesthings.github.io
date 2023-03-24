@@ -1,7 +1,7 @@
 ---
 title: "The Journey Begins"
 date: 2018-08-30
-categories: [ musings ]
+categories: [ Musings ]
 tags: [ musings ]
 ---
 

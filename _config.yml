@@ -84,7 +84,7 @@ comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: "tammy-makes-things"
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
@@ -100,6 +100,16 @@ comments:
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
+plugins:
+  - jekyll-twitch
+  - jekyll-extlinks
+  - jekyll-relative-links
+  - jektex
+
+extlinks:
+  attributes: {rel: nofollow, target: _blank}
+  rel_exclude: []
+
 assets:
   self_host:
     enabled: true
@@ -107,7 +117,12 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
-paginate: 10
+pagination: 
+  per_page: 10
+
+relative_links:
+  enabled: true
+  collections: true
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -188,3 +203,35 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+jekyll-spaceship:
+  processors:
+    - table-processor
+    - mermaid-processor
+    - media-processor
+  mermaid-processor:
+    mode: default
+    css:
+      class: mermaid
+    syntax:
+      code: 'mermaid!'
+      custom: ['@startmermaid', '@endmermaid']
+    config:
+      theme: default
+    src: https://mermaid.ink/svg/
+  media-processor:
+    default:
+      id: 'media-{id}'
+      class: 'media'
+      width: '95%'
+      height: 350
+      frameborder: 0
+      style: 'text-align: center; max-width: 600px; outline: none'
+      allow: 'encrypted-media; picture-in-picture'
+
+  pre-commit:
+    - check: FrontMatterVariableExists
+      variables: ['date', 'categories', 'tags', 'title']
+    - check: FrontMatterVariableMeetsLengthRequirements
+      variables: ['title||100', '|date|10|10']
+    - check: NoDuplicateTags
