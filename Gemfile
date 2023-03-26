@@ -3,6 +3,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3'
+gem 'faraday-retry'
+
 group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-gist'
