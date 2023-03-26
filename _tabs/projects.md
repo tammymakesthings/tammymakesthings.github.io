@@ -76,7 +76,7 @@ work in progress and coming soon icons created by
 <a href="https://www.flaticon.com/free-icons/work-in-progress">Freepik - Flaticons</a>
 </p>
 
-[555timer]: https://www.electronics-lab.com/555-timer-teardown/
+[555timer]: http://www.righto.com/2016/02/555-timer-teardown-inside-worlds-most.html 
 [741opamp]: http://www.righto.com/2015/10/inside-ubiquitous-741-op-amp-circuits.html
 [adafruitmidi]: <https://github.com/adafruit/Adafruit_CircuitPython_MIDI>
 [chineseoscope]: <https://www.amazon.com/dp/B09X385FPV/>
