@@ -27,7 +27,7 @@ My goals for designing this little prototyping station were:
 
 With that in mind, here's what I came up with:
 
-![ProtoStation - Hardware overview](/commons/protostation/protostation_overview.jpg)
+![ProtoStation - Hardware overview](/commons/images/2020-05-05-a-simple-prototyping-station/protostation_overview.jpg)
 
 Pretty handy, huh? Let's talk a bit about what's onboard.
 
@@ -40,7 +40,7 @@ OpenSCAD skills would have made that take longer than I'd have liked.
 
 ### Microcontroller
 
-![ProtoStation - Microcontroller](/commons/protostation/protostation_metrom4.jpg)
+![ProtoStation - Microcontroller](/commons/images/2020-05-05-a-simple-prototyping-station/protostation_metrom4.jpg)
 
 In the upper left area is a microcontroller, since I do lots of stuff
 with microcontrollers. (Really, who doesn't, anymore?) I threw an
@@ -52,7 +52,7 @@ to later.
 
 ### Power Distribution
 
-![ProtoStation - Power distribution block](/commons/protostation/protostation_pwrdist.jpg)
+![ProtoStation - Power distribution block](/commons/images/2020-05-05-a-simple-prototyping-station/protostation_pwrdist.jpg)
 
 The next area of the board is my power distribution block. I had a tiny
 little breadboard lying around, so I ran a bunch of stuff over to it:
@@ -71,7 +71,7 @@ providing power, obviously.)
 
 ### I2C/SPI Interface
 
-![ProtoStation - I2C/SPI Interface](/commons/protostation/protostation_ft232.jpg)
+![ProtoStation - I2C/SPI Interface](/commons/images/2020-05-05-a-simple-prototyping-station/protostation_ft232.jpg)
 
 Next up is my I2C/SPI interface, so I can test sensor-based stuff and
 whatnot easily. I used an [Adafruit FT232H][ft232h]here because it was what
@@ -82,7 +82,7 @@ use them if wanted.
 
 ### Prototyping Area
 
-![ProtoStation - Prototyping area](/commons/protostation/protostation_proto.jpg)
+![ProtoStation - Prototyping area](/commons/images/2020-05-05-a-simple-prototyping-station/protostation_proto.jpg)
 
 And lastly, the breadboards for prototyping space. Again, I used what I
 had handy. To simplify the connections between the prototyping area and
