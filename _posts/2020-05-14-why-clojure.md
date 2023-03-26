@@ -1,6 +1,6 @@
 ---
 title: "Why Clojure?"
-date: 202-05-14
+date: 2020-05-14
 categories: [Programming]
 tags: [programming, clojure, programming languages]
 ---
