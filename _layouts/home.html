@@ -50,7 +50,11 @@ layout: page
           <div class="card-text post-content">
             <p>
               {% include no-linenos.html content=post.content %}
-              {{ content | markdownify | strip_html | truncate: 200 | escape }}
+              {% if post.excerpt %}
+                {{ post.excerpt | markdownify | strip_html | escape }}
+              {% else %}
+                {{ content | markdownify | strip_html | truncate: 200 | escape }}
+              {% endif %}
             </p>
           </div>
 
