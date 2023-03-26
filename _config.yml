@@ -158,3 +158,17 @@ pre-commit:
   - check: FrontMatterVariableMeetsLengthRequirements
     variables: ['title||100', '|date|10|10']
   - check: NoDuplicateTags
+
+jekyll-compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+      categories:
+      tags:
+      image:
+      published: false
+    posts:
+      categories:
+      tags:
+      image:
+
