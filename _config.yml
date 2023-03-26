@@ -99,7 +99,7 @@ defaults:
       layout: post
       comments: true
       toc: true
-      permalink: "/posts/:year/:month/:year-:month-:day-:title/"
+      permalink: "/:categories/:year/:month/:day/:title/"
       excerpt_separator: "<!--more-->"
   - scope:
       path: _drafts
