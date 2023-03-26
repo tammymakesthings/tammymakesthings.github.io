@@ -1,50 +1,97 @@
 ---
-# the default layout is 'page'
+layout: page
 icon: fas fa-info-circle
 order: 1
 ---
 
-## CircuitPython Projects
-[CircuitPython][circuitpython] is a version of the [Python][python] programming language that runs on microcontrollers. It provides an easy development and testing cycle, a [REPL][repl] for debugging and exploration, and a robust set of libraries to support sensors, displays, and other peripherals. These are some of my CircuitPython-based projects.
+Part of the fun of making cool stuff is, of course, that when you're done you
+have cool stuff. (I know, of course it is!) But the other part of the fun is
+sharing what you've learned with others so they can learn from --- and hopefully
+be inspired by --- it. The guides in this section document my projects and
+learnings.
 
-- [fw_neopixel_pride](/projects/fw_neopixel_pride/): A NeoPixel-based scrolling display for LGBTQ+ Pride Month.
-- [macropad_midi](/projects/macropad_midi/): A simple [MacroPad][macropad]-based MIDI Controller.
-- ![inprogress](/projects/icons/inprogress.png) [cpy_carddeck](/projects/cpy_carddeck/): A CircuitPython [displayio][displayio] library for displaying playind card faces and backs.
-- ![inprogress](/projects/icons/inprogress.png) [cpy_midi_novation_circuit](/projects/cpy_midi_novation_circuit/): A CircuitPython library for controlling [Novation Circuit][novationcircuit] grooveboxes.
-- ![inprogress](/projects/icons/inprogress.png) [cpy_midi_nrpn](/projects/cpy_midi_nrpn/): An extension to the [adafruit_midi][adafruitmidi] library to support sending [NRPN][nrpn] messages.
-- ![inprogress](/projects/icons/inprogress.png) [cpy_mini_bot](/projects/cpy_mini_bot/): A small and simple CircuitPython-based robot rover.
-- ![inprogress](/projects/icons/inprogress.png) [dotstar_scrolling_text](/projects/dotstar_scrolling_text/): Displaying scrolling text on a [DotStar][dotstar] matrix display, such as the [DotStar FeatherWing][dotstarfw].
+## CircuitPython Projects
+
+[CircuitPython][circuitpython] is a version of the [Python][python]
+programming language that runs on microcontrollers. It provides an easy
+development and testing cycle, a [REPL][repl] for debugging and exploration,
+and a robust set of libraries to support sensors, displays, and other
+peripherals.
+
+These are some of my CircuitPython-based projects.
+
+- [`fw_neopixel_pride`](/projects/fw_neopixel_pride/): A NeoPixel-based scrolling
+  display for LGBTQ+ Pride Month.
+- `macropad_midi`(/projects/macropad_midi/): A simple [MacroPad][macropad]-based
+  MIDI Controller. *coming soon*
+- `cpy_carddeck`: A CircuitPython [displayio][displayio] library for displaying
+  playind card faces and backs. *coming soon*
+- `cpy_midi_nrpn`: An extension to the [adafruit_midi][adafruitmidi] library
+  to support sending [NRPN][nrpn] messages. *coming soon*
+- `cpy_midi_novation_circuit`: A CircuitPython library for controlling
+  [Novation Circuit][novationcircuit] grooveboxes. *coming soon*
+- `cpy_mini_bot`: A small and simple CircuitPython-based robot rover.*coming soon*
+- `dotstar_scrolling_text`: Displaying scrolling text on a [DotStar][dotstar]
+  matrix display, such as the [DotStar FeatherWing][dotstarfw]. *coming soon*
 
 ## Electronics Projects
 
-- ![inprogress](/projects/icons/inprogress.png) [a_map_of_sounds](/projects/a_map_of_sounds/): Pairing a [cheap oscilloscope][chineseoscope] with a simple audio amplifier circuit to visualize sounds.
-- ![inprogress](/projects/icons/inprogress.png) [transistor_amplifier](/projects/transistor_amplifier/): Exploring the basic operation of transistor amplifiers and how to design them.
+What did we do in the days before cheap, plentiful microcontrollers? We built
+things with discrete components and analog or digital [ICs][ics], of course.
+It may have been harder, but not every project needs a microcontroller!
 
-## Electronics Basics
+These are some of my electronics projects that aren't microcontroller-based.
 
-- ![inprogress](/projects/icons/inprogress.png) [555_timer_workings](/projects/555_timer_workings/): How a 555 Timer works and what it's good for.
-- ![inprogress](/projects/icons/inprogress.png) [741_op_amp_workings](/projects/741_op_amp_workings/): How a 741 Op Amp works and what it's good for.
+- `a_map_of_sounds`: Pairing a [cheap oscilloscope][chineseoscope] with a simple
+  audio amplifier circuit to visualize sounds. *coming soon*
+- `transistor_amplifier`: Exploring the basic operation of transistor
+  amplifiers and how to design them. *coming soon*
+
+## Back to Basics
+
+I took an electronics class in high school but I realize now that I've forgotten
+a ton, and also there were gaps in my conceptual knowledge. Some of this is
+because I've mostly learned as I've gone along, and some is because Past Tammy
+had a *severe* fear of math. I'm working to get over that, and as I go along,
+I'm working to fill in my knowledge gaps.
+
+These guides document some of that journey.
+
+- `555_timer_workings`: How a [555][555timer] timer works and what it's good for. 
+  *coming soon*
+- `741_op_amp_workings`: How a [741][741opamp] [op amp][opamp] works and what 
+  it's good for. *coming soon*
+- `kicad_rp2040`: Designing a simple [RP2040][rp2040]-based microcontroller 
+  board in [KiCAD][kicad]. *coming soon*
+
 
 ## Other
 
-- [Twitch Streaming][twitch] - find me on Twitch at [https://twitch.tv/tammymakesthings][twitch]. See [here](/projects/streaming/) for my current Twitch schedule and upcoming streams.
+- [My Twitch Streaming][twitch] - find me on Twitch at
+  [`https://twitch.tv/tammymakesthings`][twitch]. See [here][streaming] for my
+  current Twitch schedule and upcoming streams.
 
 <p style="font-size: 8pt">
 work in progress and coming soon icons created by
 <a href="https://www.flaticon.com/free-icons/work-in-progress">Freepik - Flaticons</a>
 </p>
 
-[adafruitmidi]: https://github.com/adafruit/Adafruit_CircuitPython_MIDI
-[chineseoscope]: https://www.amazon.com/dp/B09X385FPV/
-[circuitpython]: https://www.circuitpython.org/
-[displayio]: https://learn.adafruit.com/circuitpython-display-support-using-displayio/
-[dotstar]: https://learn.adafruit.com/adafruit-dotstar-leds/overview
-[dotstarfw]: https://www.adafruit.com/product/3449
-[iconswip]: https://www.flaticon.com/free-icons/work-in-progress
-[macropad]: https://www.adafruit.com/product/5100
-[novationcircuit]: https://novationmusic.com/en/circuit
-[nrpn]: https://en.wikipedia.org/wiki/NRPN
-[python]: https://python.org/
-[repl]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
-[twitch]: https://twitch.tv/tammymakesthings
-
+[555timer]: https://www.electronics-lab.com/555-timer-teardown/
+[741opamp]: http://www.righto.com/2015/10/inside-ubiquitous-741-op-amp-circuits.html
+[adafruitmidi]: <https://github.com/adafruit/Adafruit_CircuitPython_MIDI>
+[chineseoscope]: <https://www.amazon.com/dp/B09X385FPV/>
+[circuitpython]: <https://www.circuitpython.org/>
+[displayio]: <https://learn.adafruit.com/circuitpython-display-support-using-displayio/>
+[dotstar]: <https://learn.adafruit.com/adafruit-dotstar-leds/overview>
+[dotstarfw]: <https://www.adafruit.com/product/3449>
+[ics]: https://en.wikipedia.org/wiki/Integrated_circuit
+[kicad]: https://www.kicad.org/
+[macropad]: <https://www.adafruit.com/product/5100>
+[novationcircuit]: <https://novationmusic.com/en/circuit>
+[nrpn]: <https://en.wikipedia.org/wiki/NRPN>
+[opamp]: https://en.wikipedia.org/wiki/Operational_amplifier
+[python]: <https://python.org/>
+[repl]: <https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop>
+[rp2040]: https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html
+[streaming]: <https://www.tammymakesthings.com/projects/streaming/>
+[twitch]: <https://twitch.tv/tammymakesthings>
