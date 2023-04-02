@@ -1,20 +1,9 @@
-
 ---
 layout: project
-title: "Projects - micro:bit Mini Bot"
-permalink: "/projects/microbit_mini_bot/"
-project_status: inprogress
+title: "Projects - microbit_mini_bot"
+permalink: "/projects/microbit_mini_bot"
+project_status: In Progress
 ---
 
-_Brief description of project._
-
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+_In which I help my young nephew build his own robot army._
 

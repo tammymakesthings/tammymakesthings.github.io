@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Projects - A Map of Sounds"
-permalink: /projects/a_map_of_sounds/
+title: "Projects - a_map_of_sounds"
+permalink: "/projects/a_map_of_sounds/"
 project_status: In Progress
 ---
 

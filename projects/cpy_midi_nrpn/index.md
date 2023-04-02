@@ -1,18 +1,14 @@
 ---
 layout: project
-title: "Projects - CircuitPython MIDI NRPN Extensions"
+title: "Projects - cpy_midi_nrpn"
 permalink: /projects/cpy_midi_nrpn/
+project_status: Coming Soon
 ---
 
-_Brief description of project._
+_How can we extend the [adafruit_midi][afmidi] [CircuitPython][cpy] library to support_
+_generating [NRPN][nrpn] messages?_
 
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+[afmidi]: <https://github.com/adafruit/Adafruit_CircuitPython_MIDI>
+[cpy]: <https://circuitpython.org/>
+[nrpn]: <https://en.wikipedia.org/wiki/NRPN>
 

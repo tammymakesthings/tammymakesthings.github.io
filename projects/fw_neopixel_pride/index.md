@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "Projects - fw_neopixel_pride"
-permalink: /projects/fw_neopixel_pride/
-github_repo: tammymakesthings/fw_neopixel_pride
+permalink: "/projects/fw_neopixel_pride/"
+github_repo: "tammymakesthings/fw_neopixel_pride"
 project_status: Completed
 ---
 

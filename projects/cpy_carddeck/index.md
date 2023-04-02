@@ -1,18 +1,9 @@
 ---
 layout: project
-title: "Projects - CPY Card Deck Library"
-permalink: /projects/cpy_card_deck/
+title: "Projects - cpy_carddeck"
+permalink: "/projects/cpy_carddeck/"
+project_status: Coming Soon
 ---
 
-_Brief description of project._
-
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+_A reusable CircuitPython library to display playing card images and spreads._
 

@@ -1,18 +1,11 @@
 ---
 layout: project
 title: "Projects - cpy_mini_bot"
-permalink: /projects/cpy_mini_bot/
+permalink: "/projects/cpy_mini_bot/"
+project_status: Coming Soon
 ---
 
-_Brief description of project._
+_Can we build and program a small robot with [CircuitPython][cpy]? Of course!._
 
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+[cpy]: <https://circuitpython.org/>
 

@@ -1,18 +1,12 @@
 ---
 layout: project
-title: "Projects: 555 Timer Basics"
-permalink: /projects/555_timer_basics/
+title: "Projects - 555_timer_workings"
+permalink: "/projects/555_timer_workings/"
+project_status: Coming Soon
 ---
 
-_Brief description of project._
+_The [555 timer IC][555timer] is one of the most popular integrated circuits ever._
+_But how exactly does it work?_
 
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+[555timer]: <https://en.wikipedia.org/wiki/555_timer_IC>
 

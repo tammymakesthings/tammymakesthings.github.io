@@ -1,18 +1,12 @@
 ---
 layout: project
-title: "Projects - Transistor Amplifier"
-permalink: /projects/transistor_amplifier/
+title: "Projects - transistor_amplifier"
+permalink: "/projects/transistor_amplifier/"
+project_status: Coming Soon
 ---
 
-_Brief description of project._
+_Let's build a [BJT transistor][transistor] amplifier and learn a bit more about how_
+_transistors work and how to use them._
 
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+[transistor]: <https://en.wikipedia.org/wiki/Bipolar_junction_transistor>
 

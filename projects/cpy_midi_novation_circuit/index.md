@@ -1,18 +1,14 @@
 ---
 layout: project
-title: "Projects - CPY Novation Circuit Control"
-permalink: /projects/cpy_novation_circuit/
+title: "Projects - cpy_midi_novation_circuit"
+permalink: "/projects/cpy_midi_novation_circuit/"
+project_status: Coming Soon
 ---
 
-_Brief description of project._
+_Let's see if we can control a [Novation Circuit][circuit] using [CircuitPython][cpy] and_
+_[MIDI][midi]._
 
-## Objectives
-
-## Designing the Hardware
-
-## Coding It Up
-
-## Opportunities for Expansion
-
-## What I Learned
+[circuit]: <https://novationmusic.com/en/circuit>
+[cpy]: <https://circuitpython.org/>
+[midi]: <https://en.wikipedia.org/wiki/MIDI>
 
