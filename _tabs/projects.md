@@ -21,18 +21,20 @@ peripherals.
 These are some of my CircuitPython-based projects.
 
 - [`fw_neopixel_pride`](/projects/fw_neopixel_pride/): A NeoPixel-based scrolling
-  display for LGBTQ+ Pride Month.
+  display for LGBTQ+ Pride Month. (*complete*)
 - `macropad_midi`(/projects/macropad_midi/): A simple [MacroPad][macropad]-based
-  MIDI Controller. *coming soon*
+  MIDI Controller. (*coming soon*)
 - `cpy_carddeck`: A CircuitPython [displayio][displayio] library for displaying
-  playind card faces and backs. *coming soon*
+  playind card faces and backs. (*coming soon*)
 - `cpy_midi_nrpn`: An extension to the [adafruit_midi][adafruitmidi] library
-  to support sending [NRPN][nrpn] messages. *coming soon*
+  to support sending [NRPN][nrpn] messages. (*coming soon*)
 - `cpy_midi_novation_circuit`: A CircuitPython library for controlling
-  [Novation Circuit][novationcircuit] grooveboxes. *coming soon*
-- `cpy_mini_bot`: A small and simple CircuitPython-based robot rover.*coming soon*
+  [Novation Circuit][novationcircuit] grooveboxes. (*coming soon*)
+- `cpy_mini_bot`: A small and simple CircuitPython-based robot rover.(*coming soon*)
+- [`microbit_mini_bot`](/projects/microbit_mini_bot/): Explorations with a
+  [micro:bit][microbit]-based mini bot and [make:code][makecode]. (*in progress*)
 - `dotstar_scrolling_text`: Displaying scrolling text on a [DotStar][dotstar]
-  matrix display, such as the [DotStar FeatherWing][dotstarfw]. *coming soon*
+  matrix display, such as the [DotStar FeatherWing][dotstarfw]. (*coming soon*)
 
 ## Electronics Projects
 
@@ -42,10 +44,11 @@ It may have been harder, but not every project needs a microcontroller!
 
 These are some of my electronics projects that aren't microcontroller-based.
 
-- `a_map_of_sounds`: Pairing a [cheap oscilloscope][chineseoscope] with a simple
-  audio amplifier circuit to visualize sounds. *coming soon*
+- [`a_map_of_sounds`](/projects/a_map_of_sounds/): Pairing a
+  [cheap oscilloscope][chineseoscope] with a simple audio amplifier circuit
+  to visualize sounds. (*in progress*)
 - `transistor_amplifier`: Exploring the basic operation of transistor
-  amplifiers and how to design them. *coming soon*
+  amplifiers and how to design them. (*coming soon*)
 
 ## Back to Basics
 
@@ -58,11 +61,11 @@ I'm working to fill in my knowledge gaps.
 These guides document some of that journey.
 
 - `555_timer_workings`: How a [555][555timer] timer works and what it's good for. 
-  *coming soon*
+  (*coming soon*)
 - `741_op_amp_workings`: How a [741][741opamp] [op amp][opamp] works and what 
-  it's good for. *coming soon*
+  it's good for. (*coming soon*)
 - `kicad_rp2040`: Designing a simple [RP2040][rp2040]-based microcontroller 
-  board in [KiCAD][kicad]. *coming soon*
+  board in [KiCAD][kicad]. (*coming soon*)
 
 
 ## Other
@@ -76,22 +79,24 @@ work in progress and coming soon icons created by
 <a href="https://www.flaticon.com/free-icons/work-in-progress">Freepik - Flaticons</a>
 </p>
 
-[555timer]: http://www.righto.com/2016/02/555-timer-teardown-inside-worlds-most.html 
-[741opamp]: http://www.righto.com/2015/10/inside-ubiquitous-741-op-amp-circuits.html
+[555timer]: <http://www.righto.com/2016/02/555-timer-teardown-inside-worlds-most.html>
+[741opamp]: <http://www.righto.com/2015/10/inside-ubiquitous-741-op-amp-circuits.html>
 [adafruitmidi]: <https://github.com/adafruit/Adafruit_CircuitPython_MIDI>
 [chineseoscope]: <https://www.amazon.com/dp/B09X385FPV/>
 [circuitpython]: <https://www.circuitpython.org/>
 [displayio]: <https://learn.adafruit.com/circuitpython-display-support-using-displayio/>
 [dotstar]: <https://learn.adafruit.com/adafruit-dotstar-leds/overview>
 [dotstarfw]: <https://www.adafruit.com/product/3449>
-[ics]: https://en.wikipedia.org/wiki/Integrated_circuit
-[kicad]: https://www.kicad.org/
+[ics]: <https://en.wikipedia.org/wiki/Integrated_circuit>
+[kicad]: <https://www.kicad.org/>
 [macropad]: <https://www.adafruit.com/product/5100>
+[makecode]: <https://makecode.microbit.org/>
+[microbit]: <https://microbit.org/>
 [novationcircuit]: <https://novationmusic.com/en/circuit>
 [nrpn]: <https://en.wikipedia.org/wiki/NRPN>
-[opamp]: https://en.wikipedia.org/wiki/Operational_amplifier
+[opamp]: <https://en.wikipedia.org/wiki/Operational_amplifier>
 [python]: <https://python.org/>
 [repl]: <https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop>
-[rp2040]: https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html
+[rp2040]: <https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html>
 [streaming]: <https://www.tammymakesthings.com/projects/streaming/>
 [twitch]: <https://twitch.tv/tammymakesthings>

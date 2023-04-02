@@ -21,6 +21,9 @@ layout: default
     {% if page.layout == 'page' or page.collection == 'tabs' %}
       {% assign tab_key = page.title | downcase %}
       {% assign title = site.data.locales[site.lang].tabs[tab_key] | default: page.title %}
+      {% if page.project_status %}
+        {% assign project_status = page.project_status | default: "coming soon" %}
+      {% endif %}
       <h1 class="dynamic-title">
         {{ title }}
       </h1>
