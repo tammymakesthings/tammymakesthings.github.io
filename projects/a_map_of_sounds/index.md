@@ -61,7 +61,7 @@ spacing. Each connector had four shield/ground pins, and one center/signal pin,
 and they were just not arranged in a way that they could line up with the holes
 on the protoboard.
 
-![The BNC connectors, as they came from AliExpress](./bnc-connector.jpg)
+![The BNC connectors, as they came from AliExpress](images/bnc-connector.jpg)
 
 In hindsight, I should probably have anticipated this would be an issue. With
 a little experimentation, the solution was simple and obvious: I cut off two
@@ -69,7 +69,7 @@ of the ground/shield pins, and mounted the connector at an angle on the
 protoboard. This is not an ideal solution, but it beats drilling the protoboard,
 and I judged it would be strong enough for my purposes.
 
-![The BNC connector, as modified to fit onto the protoboard](./bnc-connector-modified.jpg)
+![The BNC connector, as modified to fit onto the protoboard](images/bnc-connector-modified.jpg)
 
 Not an elegant solution, but it worked.
 
@@ -79,14 +79,14 @@ jumper later would be very difficult.
 
 Here's how the connector looked when mounted to the board:
 
-![The BNC connector mounted on the protoboard](./bnc-connector-mounted.jpg)
+![The BNC connector mounted on the protoboard](images/bnc-connector-mounted.jpg)
 
 That took care of the easy problem. The next one -- getting the oscilloscope into its
 case -- would prove a bit more challenging.
 
 ### The Oscilloscope and Its Case
 
-![The DSO138 Oscilloscope](./oscope-board.jpg)
+![The DSO138 Oscilloscope](images/oscope-board.jpg)
 
 The [DSO138][dso138] oscilloscopes are based around [STM32][stm32] microcontrollers.
 Looking at the schematic provided with the device, the oscilloscope I received has:
@@ -122,7 +122,7 @@ A further 30 minutes of experimentation revealed that the designers of the case 
 made the mating tabs asymmetrical (so you can't put the pieces together upside
 down - great!), and I eventually got things assembled...sort of.
 
-![The DSO138 in its case...sort of.](./oscope-with-case.jpg)
+![The DSO138 in its case...sort of.](images/oscope-with-case.jpg)
 
 Two additional problems remained, however:
 
