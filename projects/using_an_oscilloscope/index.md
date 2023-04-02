@@ -5,7 +5,7 @@ permalink: /projects/using_an_oscilloscope/
 project_status: Coming Soon
 ---
 
-![FNRSI Oscilloscope](images/fnrsi-stairstep.jpg)
+![FNRSI Oscilloscope](/commons/projects/using_an_oscilloscope/fnrsi-stairstep.jpg)
 
 ## What is an Oscilloscope?
 
