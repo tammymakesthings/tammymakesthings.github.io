@@ -1,7 +1,8 @@
 ---
 layout: project
-title: "Projects - vna_ss_tutorial"
-permalink: "/projects/vna_ss_tutorial/"
+title: "Projects - vna_sa_tutorial"
+permalink: "/projects/vna_sa_tutorial/"
+permalink: "/commons/projects/vna_sa_tutorial/"
 project_status: Coming Soon
 ---
 

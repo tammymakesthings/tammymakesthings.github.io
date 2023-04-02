@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - dotstar_scrolling_text"
 permalink: "/projects/dotstar_scrolling_text/"
+img_path: "/commons/projects/dotstar_scrolling_text/"
 project_status: Coming Soon
 ---
 

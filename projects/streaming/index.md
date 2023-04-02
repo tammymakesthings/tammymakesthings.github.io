@@ -2,6 +2,7 @@
 layout: page
 title: "Twitch Streaming"
 permalink: "/projects/streaming/"
+img_path: "/commons/projects/streaming/"
 ---
 
 One of my activities is streaming on [Twitch][twitch]. I enjoy inspiring others, and I

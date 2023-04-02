@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - 555_timer_workings"
 permalink: "/projects/555_timer_workings/"
+img_path: "/commons/projects/555_timer_workings/"
 project_status: Coming Soon
 ---
 

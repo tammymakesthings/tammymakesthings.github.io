@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - transistor_amplifier"
 permalink: "/projects/transistor_amplifier/"
+img_path: "/commons/projects/transistor_amplifier/"
 project_status: Coming Soon
 ---
 

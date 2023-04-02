@@ -1,7 +1,8 @@
 ---
 layout: project
-title: "Projects - using_an_oscilloscope "
+title: "Projects - using_an_oscilloscope"
 permalink: /projects/using_an_oscilloscope/
+img_path: /commons/projects/using_an_oscilloscope/
 project_status: Coming Soon
 ---
 

@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - 555_punk_console_respin"
 permalink: "/projects/555_punk_console_respin/"
+img_path: "/commons/projects/555_punk_console_respin/"
 project_status: Coming Soon
 ---
 

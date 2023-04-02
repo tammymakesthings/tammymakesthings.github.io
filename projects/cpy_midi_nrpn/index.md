@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - cpy_midi_nrpn"
 permalink: /projects/cpy_midi_nrpn/
+img_path: /commons/projects/cpy_midi_nrpn/
 project_status: Coming Soon
 ---
 

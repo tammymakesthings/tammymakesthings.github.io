@@ -1,7 +1,8 @@
 ---
 layout: project
-title: "Projects - "
-permalink: /projects/
+title: "Projects - PROJECTNAME"
+permalink: /projects/PROJECTNAME
+img_path: /commons/projects/PROJECTNAME/
 project_status: Coming Soon
 ---
 

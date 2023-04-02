@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+JEKYLL_ROOT=${JEKYLL_ROOT:-"$(dirname $0)/.."}
+
+if [ ! -d "${JEKYLL_ROOT}" ]
+then
+    echo "Could not determine Jekyll root - maybe set JEKYLL_ROOT?"
+    exit 200
+fi
+
+if [ "$#" != 1 -o "$1" == "-h" -o "$1" == "--help" ]
+then
+    echo "Usage: $(basename $0) <project_tag>"
+    exit 201
+fi
+
+proj_name=$(echo $1 | sed 's/ /_/g' | tr "[A-Z]" "[a-z]")
+
+if [ -d "${JEKYLL_ROOT}/projects/${proj_name}" ]
+then
+    echo "Error: A project directory named '${proj_name}' already exists!"
+    exit 202
+fi
+
+if [ -d "${JEKYLL_ROOT}/commons/projects/${proj_name}" ]
+then
+    echo "Error: An images directory named '${proj_name}' already exists!"
+    exit 203
+fi
+
+echo "$(basenme $0): Creating new project with tag \"${proj_name}\"..."
+
+echo "- page directory"
+mkdir -p "${JEKYLL_ROOT}/projects/${proj_name}"
+
+echo "- images directory"
+mkdir -p "${JEKYLL_ROOT}/commons/projects/${proj_name}"
+touch "${JEKYLL_ROOT}/commons/projects/${proj_name}/.gitkeep"
+
+echo "- index.md file"
+echo "---" > "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "layout: project" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "title: $(echo ${proj_name} | sed 's/_/ /g')" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "permalink: \"/projects/${proj_name}\"" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "img_path: \"/commons/projects/${proj_name}\"" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "project_status: Coming Soon" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "---" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "_Brief project overview_" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+echo "" >> "${JEKYLL_ROOT}/projects/${proj_name}/index.md"
+
+echo "Done."
+cd "${JEKYLL_ROOT}/projects/${proj_name}"
+exit 0

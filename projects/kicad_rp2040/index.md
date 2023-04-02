@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - kicad_rp2040"
 permalink: "/projects/kicad_rp2040/"
+img_path: "/commons/projects/kicad_rp2040/"
 project_status: Coming Soon
 ---
 

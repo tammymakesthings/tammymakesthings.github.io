@@ -2,6 +2,7 @@
 layout: project
 title: "Projects - cpy_midi_novation_circuit"
 permalink: "/projects/cpy_midi_novation_circuit/"
+img_path: "/commons/projects/cpy_midi_novation_circuit/"
 project_status: Coming Soon
 ---
 
