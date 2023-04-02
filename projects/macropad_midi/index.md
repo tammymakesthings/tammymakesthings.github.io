@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - MacroPad MIDI Controller"
 permalink: /projects/macropad_midi/
 ---

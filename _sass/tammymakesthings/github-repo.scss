@@ -1,0 +1,32 @@
+
+// ******************************************************************************
+//             Page Type(s): project
+//              Description: GitHub Repo URL Link Block
+//           SASS File Path: _sass/tammymmakesthings/github-repo.scss
+// Liquid Include File Path: _includes/tammymmakesthings/github-repo.html
+// ******************************************************************************
+
+div.github-repo {
+    width: 95%;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #333;
+    height: 60px;
+
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 5px 5px 5px 5px;
+
+    .repo-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: rgb(51, 102, 204);
+        color: #f0f0f0;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .repo-link {
+        font-weight: normal;
+        padding: 5px 5px 5px 5px;
+    }
+}

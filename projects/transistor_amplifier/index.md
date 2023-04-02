@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - Transistor Amplifier"
 permalink: /projects/transistor_amplifier/
 ---

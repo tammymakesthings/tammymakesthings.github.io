@@ -1,0 +1,12 @@
+{% if page.github_repo %}
+    <div class="github-repo">
+        <div class="repo-title">
+            Project Code:
+        </div>
+        <div class="repo-link">
+            <a href="https://github.com/{{ page.github_repo | urlencode }}">
+                {{ page.github_repo }}
+            </a>
+        </div>
+    </div>
+{% endif %}

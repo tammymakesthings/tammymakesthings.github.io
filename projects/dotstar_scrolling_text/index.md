@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - DotStar Scrolling Text"
 permalink: /projects/dotstar_scrolling_text/
 ---

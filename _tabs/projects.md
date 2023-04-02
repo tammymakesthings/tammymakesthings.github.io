@@ -20,20 +20,26 @@ peripherals.
 
 These are some of my CircuitPython-based projects.
 
-- [`fw_neopixel_pride`](/projects/fw_neopixel_pride/): A NeoPixel-based scrolling
+- [fw_neopixel_pride](/projects/fw_neopixel_pride/): A NeoPixel-based scrolling
   display for LGBTQ+ Pride Month. (*complete*)
-- `macropad_midi`(/projects/macropad_midi/): A simple [MacroPad][macropad]-based
+
+- [macropad_midi](/projects/macropad_midi/): A simple [MacroPad][macropad]-based
   MIDI Controller. (*coming soon*)
-- `cpy_carddeck`: A CircuitPython [displayio][displayio] library for displaying
+
+- [cpy_carddeck](/projects/cpy_carddeck/): A CircuitPython [displayio][displayio] library for displaying
   playind card faces and backs. (*coming soon*)
-- `cpy_midi_nrpn`: An extension to the [adafruit_midi][adafruitmidi] library
+
+- [cpy_midi_nrpn](/projects/cpy_midi_nrpn/): An extension to the [adafruit_midi][adafruitmidi] library
   to support sending [NRPN][nrpn] messages. (*coming soon*)
-- `cpy_midi_novation_circuit`: A CircuitPython library for controlling
+
+- [cpy_midi_novation_circuit](/projects/cpy_midi_novation_circuit/): A CircuitPython library for controlling
   [Novation Circuit][novationcircuit] grooveboxes. (*coming soon*)
-- `cpy_mini_bot`: A small and simple CircuitPython-based robot rover.(*coming soon*)
-- [`microbit_mini_bot`](/projects/microbit_mini_bot/): Explorations with a
+
+- [cpy_mini_bot](/projects/cpy_mini_bot/): A small and simple CircuitPython-based robot rover.(*coming soon*)
+- [microbit_mini_bot](/projects/microbit_mini_bot/): Explorations with a
   [micro:bit][microbit]-based mini bot and [make:code][makecode]. (*in progress*)
-- `dotstar_scrolling_text`: Displaying scrolling text on a [DotStar][dotstar]
+
+- [dotstar_scrolling_text](/projects/dotstar_scrolling_text/): Displaying scrolling text on a [DotStar][dotstar]
   matrix display, such as the [DotStar FeatherWing][dotstarfw]. (*coming soon*)
 
 ## Electronics Projects
@@ -44,10 +50,11 @@ It may have been harder, but not every project needs a microcontroller!
 
 These are some of my electronics projects that aren't microcontroller-based.
 
-- [`a_map_of_sounds`](/projects/a_map_of_sounds/): Pairing a
+- [a_map_of_sounds](/projects/a_map_of_sounds/): Pairing a
   [cheap oscilloscope][chineseoscope] with a simple audio amplifier circuit
   to visualize sounds. (*in progress*)
-- `transistor_amplifier`: Exploring the basic operation of transistor
+
+- [transistor_amplifier](/projects/transistor_amplifier/): Exploring the basic operation of transistor
   amplifiers and how to design them. (*coming soon*)
 
 ## Back to Basics
@@ -60,18 +67,20 @@ I'm working to fill in my knowledge gaps.
 
 These guides document some of that journey.
 
-- `555_timer_workings`: How a [555][555timer] timer works and what it's good for. 
+- [555_timer_workings](/projects/555_timer_workings/): How a [555][555timer] timer works and what it's good for.
   (*coming soon*)
-- `741_op_amp_workings`: How a [741][741opamp] [op amp][opamp] works and what 
+
+- [741_op_amp_workings](/projects/741_op_amp_workings/): How a [741][741opamp] [op amp][opamp] works and what
   it's good for. (*coming soon*)
-- `kicad_rp2040`: Designing a simple [RP2040][rp2040]-based microcontroller 
+
+- [kicad_rp2040](/projects/kicad_rp2040/): Designing a simple [RP2040][rp2040]-based microcontroller
   board in [KiCAD][kicad]. (*coming soon*)
 
 
 ## Other
 
 - [My Twitch Streaming][twitch] - find me on Twitch at
-  [`https://twitch.tv/tammymakesthings`][twitch]. See [here][streaming] for my
+  [https://twitch.tv/tammymakesthings][twitch]. See [here][streaming] for my
   current Twitch schedule and upcoming streams.
 
 <p style="font-size: 8pt">

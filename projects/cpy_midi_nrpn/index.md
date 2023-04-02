@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - CircuitPython MIDI NRPN Extensions"
 permalink: /projects/cpy_midi_nrpn/
 ---

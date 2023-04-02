@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - cpy_mini_bot"
 permalink: /projects/cpy_mini_bot/
 ---

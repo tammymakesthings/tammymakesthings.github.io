@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - CPY Card Deck Library"
 permalink: /projects/cpy_card_deck/
 ---

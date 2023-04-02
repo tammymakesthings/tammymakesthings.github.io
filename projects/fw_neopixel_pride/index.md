@@ -1,13 +1,15 @@
 ---
-layout: page
+layout: project
 title: "Projects - fw_neopixel_pride"
 permalink: /projects/fw_neopixel_pride/
+github_repo: tammymakesthings/fw_neopixel_pride
+project_status: Completed
 ---
 
 _June is LGBTQ Pride Month. Celebrate your pride with this fun, animated piece
 of electronic jewelry!_
 
-![LGBT Rainbow Pride Flag](/projects/fw_neopixel_pride/images/badge_running_1.jpg)
+![LGBT Rainbow Pride Flag](.//badge_running_1.jpg)
 
 ## Important Note
 
@@ -78,7 +80,7 @@ If you want to use something other than one of the Feather M0/M4 Express
 connections, rather than using the stackable headers. On the Featherwing
 board, you'll need to connect:
 
-![Featherwing Pinout](/projects/fw_neopixel_pride/images/featherwing_pinout.jpg)
+![Featherwing Pinout](.//featherwing_pinout.jpg)
 
 | Pin      | Color | Connected To                                      |
 | ---      | ----- | ------------                                      |
@@ -120,7 +122,7 @@ into their holes, and then carefully turn the board upside down. Solder the
 end pins on each header to hold everything together, and then go back and
 solder the rest of the pins.
 
-![Soldering the headers onto the Feather](/projects/fw_neopixel_pride/images/soldering_feather.jpg)
+![Soldering the headers onto the Feather](.//soldering_feather.jpg)
 
 **Solder the male stackable headers to the Featherwing.** The short side of
 the header comes up through the board from the bottom, and then is
@@ -129,12 +131,12 @@ with the Feather underneath it. I like to set the long end of the pin headers
 into a solderless breadboard, then lay the Featherwing on top of it. This
 helps keep the pins aligned and parallel while you're soldering.
 
-![Soldering the FeatherWing](/projects/fw_neopixel_pride/images/soldering_featherwing.jpg)
+![Soldering the FeatherWing](.//soldering_featherwing.jpg)
 
 **Stack the Featherwing and Feather.** Gently squeeze to seat the pins into
 the connectors on the microcontroller board.
 
-![Stacking the boards](/projects/fw_neopixel_pride/images/boards_stacked.jpg)
+![Stacking the boards](.//boards_stacked.jpg)
 
 **Add a LiPo battery.** If you chose the [Adafruit 400mAH LiPo], it'll fit
 nicely between the two boards, but you can use a different battery if you

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - CPY Novation Circuit Control"
 permalink: /projects/cpy_novation_circuit/
 ---

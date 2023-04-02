@@ -1,6 +1,6 @@
 
 ---
-layout: page
+layout: project
 title: "Projects - micro:bit Mini Bot"
 permalink: "/projects/microbit_mini_bot/"
 project_status: inprogress

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - Twitch Streaming"
 permalink: /projects/twitch_streaming/
 ---

@@ -1,0 +1,9 @@
+{% assign project_status = page.project_status | default: "Planned" %}
+{% assign project_status_type = page.project_status | downcase | replace: ' ', '-' %}
+
+<div class="project-status">
+    <div class="project-status-{{ project_status_type }}">
+        <div class="status-title">Project Status:</div>
+        <div class="status-text">{{ project_status }}</div>
+    </div>
+</div>

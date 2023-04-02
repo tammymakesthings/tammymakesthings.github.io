@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects: 555 Timer Basics"
 permalink: /projects/555_timer_basics/
 ---

@@ -1,3 +1,9 @@
 /*
   Appending custom SCSS variables will override the default ones in `_sass/addon/variables.scsss`
 */
+$tmt-project-notstarted-color: #cc0000;
+$tmt-project-inoprogress-color: #ff6600;
+$tmt-project-completed-color: #009933;
+$tmt-project-completed-color: #cc99ff;
+
+$tmt-github-link-background: var(--link-color);

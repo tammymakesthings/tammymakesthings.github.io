@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Projects - 741 Op Amp Basics"
 permalink: /projects/741_op_amp_basics/
 ---
