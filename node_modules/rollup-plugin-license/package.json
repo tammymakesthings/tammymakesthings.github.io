@@ -1,0 +1,84 @@
+{
+  "name": "rollup-plugin-license",
+  "version": "3.0.1",
+  "description": "Rollup plugin to add license banner to the final bundle and output third party licenses",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "lint": "gulp lint",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "test": "gulp test",
+    "tdd": "gulp tdd",
+    "changelog": "gulp changelog",
+    "release": "gulp release:minor",
+    "release:patch": "gulp release:patch",
+    "release:minor": "gulp release:minor",
+    "release:major": "gulp release:major"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin"
+  ],
+  "author": "Mickael Jeanroy <mickael.jeanroy@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/mjeanroy/rollup-plugin-license",
+  "bugs": {
+    "url": "https://github.com/mjeanroy/rollup-plugin-license/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjeanroy/rollup-plugin-license"
+  },
+  "peerDependencies": {
+    "rollup": "^1.0.0 || ^2.0.0 || ^3.0.0"
+  },
+  "dependencies": {
+    "commenting": "~1.1.0",
+    "glob": "~7.2.0",
+    "lodash": "~4.17.21",
+    "magic-string": "~0.26.2",
+    "mkdirp": "~1.0.4",
+    "moment": "~2.29.3",
+    "package-name-regex": "~2.0.6",
+    "spdx-expression-validate": "~2.0.0",
+    "spdx-satisfies": "~5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.19.6",
+    "@babel/preset-env": "7.19.4",
+    "@babel/register": "7.18.9",
+    "@rollup/plugin-babel": "6.0.2",
+    "@rollup/plugin-commonjs": "23.0.2",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-virtual": "3.0.1",
+    "@typescript-eslint/eslint-plugin": "5.41.0",
+    "@typescript-eslint/parser": "5.41.0",
+    "babel-plugin-add-module-exports": "1.0.4",
+    "eslint": "8.26.0",
+    "eslint-config-google": "0.14.0",
+    "fancy-log": "2.0.0",
+    "fs-extra": "10.1.0",
+    "globalthis": "1.0.3",
+    "gulp": "4.0.2",
+    "gulp-bump": "3.2.0",
+    "gulp-conventional-changelog": "2.0.35",
+    "gulp-eslint": "6.0.0",
+    "gulp-git": "2.10.1",
+    "gulp-jasmine": "4.0.0",
+    "jasmine": "3.10.0",
+    "jasmine-core": "3.10.1",
+    "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "rollup": "3.2.3",
+    "rollup-plugin-prettier": "3.0.0",
+    "rollup-plugin-strip-banner": "3.0.0",
+    "tmp": "0.2.1",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

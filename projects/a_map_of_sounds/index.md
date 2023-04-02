@@ -1,8 +1,8 @@
 ---
-layout: page
-title: "Projects - A Map of Sound"
+layout: project
+title: "Projects - A Map of Sounds"
 permalink: /projects/a_map_of_sounds/
-project_status: inprogress
+project_status: In Progress
 ---
 
 _Can we use an inexpensive Chinese oscilloscope to make a "map of sounds"? Let's try!_
