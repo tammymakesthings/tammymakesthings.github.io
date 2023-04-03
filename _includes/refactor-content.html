@@ -137,14 +137,6 @@
       {% endunless %}
     {% endif %}
 
-    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
-    {% assign _left = _left | replace: 'src=', 'data-src=' %}
-    {% if _left contains 'class=' %}
-      {% assign _left = _left | replace: 'class="', 'class="lazyload '%}
-    {% else %}
-      {% assign _left = _left | append: ' class="lazyload"' %}
-    {% endif %}
-
     <!-- add image placeholder -->
     {% if _lqip %}
       {% assign _left = _left | replace: ' lqip=', ' data-lqip="true" src=' %}
