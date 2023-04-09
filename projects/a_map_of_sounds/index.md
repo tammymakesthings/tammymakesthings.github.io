@@ -35,9 +35,9 @@ I started thinking about what we need for this project:
 
 - **An audio amplifier**. There are a zillion ways to solve this piece of the
   puzzle. I don't care too much about audio quality here, just making the signal
-  from the microphone strong enough to see on the scope. I decided that a simple
-  audio amplifier circuit based around an [LM358][lm358] [operational amplifier][opamp]
-  IC would suffice.
+  from the microphone strong enough to see on the scope. I'd initially thought of
+  using an [LM358][lm358] [operational amplifier][opamp], but decided to go with a
+  single-stage transistor amplifier for reasons I'll explain later.
 
 I'd also need a protoboard to build on, a BNC jack (for the amplifier board),
 a BNC cable (to connect the amplifier and oscilloscope) and power connectors.
@@ -140,8 +140,144 @@ up. A dear friend is 3-D printing a case for me insted.
 ## Designing the Audio Amplifier Circuit
 
 With the oscilloscope more-or-less sorted, it was time to turn my attention
-to the audio amplifier. I'll be updating this page as I make progress on
-that, so check back soon for the rest of the project!
+to the audio amplifier. I've thought about several ways of approaching this,
+but I decided to go with a simple single-transistor small signal amplifier.
+
+You might be wondering why I didn't just use an [op amp][opamp]. That was, in
+fact, my initial thought. I decided against it, and decided to build a single
+transistor small signal amplifier circuit, for two reasons:
+
+1. I realized I didn't fully understand the theory of how transistor amplifiers
+   worked, and this project provided an excuse to fill a hole in my theoretical
+   knowledge.
+   
+2. A transistor amplifier has slightly more circuitry, which will make the
+   circuit board more interesting for my nephew. (Perhaps silly, but a definite
+   consideration here.)
+   
+So I watched a bunch of YouTube videos about transistor amplifiers, and came
+up with a circuit both that would work and whose functions I could explain.
+Here's what I came up with:
+
+![Transistor amplifier schematic diagram](simple-amp-circuit-rev2.jpg)
+
+### How Does This Circuit Work?
+
+**Q1**, the transistor (in this case a [2N3904][2n3904]), is performing the
+amplification. At its simplest, a transistor takes a small signal on its
+_base_ (on the left) and produces a larger signal across its _emitter_ (top
+right) and _collector_ (bottom right). 
+
+But, as you can see, we can't just slap a transistor in there by itself and 
+have things work. Let's talk about what the other components do.
+
+**R1** adds some of our 9V supply voltage onto the (tiny) signal coming from
+the microphone. Transistors need a minimum amount of voltage to operate, and
+without this resistor (called the **bias resistor**), the transistor would 
+just sit there doing nothing. It works with **R2** to form a 
+[voltage doubler][vdivider], making it so that changes in the current on the
+base (because a microphone is an [inductor][inductor] and therefore produces
+current changes as the sound level changes) are translated into voltage changes
+which can be amplified by the transistor.
+
+R1 and R2 provide another important function to the circuit, too. By stabilizing
+the voltage on the base of the transistor, they isolate the circuit somewhat from
+fluctuations caused by temperature, individual characteristics of the transistor,
+and other things which introduce non-[linearities][linearity] to how the circuit
+behaves.
+
+**C1** is a [capacitor][capacitor], and its job is to filter out that DC bias 
+voltage. The transistor needs that extra voltage to operate, but we don't want
+the amplifier to amplify that DC [bias voltage][biasv], only the AC (microphone) 
+signal. You can think of a capacitor as sort of an AC resistor -- it allows the 
+AC part of the signal to pass through and filters out the DC part. This is a bit 
+of an over-simplification, but it's close enough for now.
+
+**R3** provides negative feedback to the circuit by [biasing][biasv] the emitter side
+of the transistor's collector--emitter junction. Like the signal on the base of the
+transistor and resistor R1, this sets the baseline level of voltage flowing through
+the transistor. This also has the effect of establishing the [gain][gain] of the
+amplifier by providing the DC voltage on top of which the AC signal will "ride".
+
+**R4**, similarly, acts to [bias][biasv] the collector side of the transistor's
+collector--emitter junction. It also provides some negative feedback to stabilize
+the operation of the circuit, and the ratio of the values of R3 and R4 determine the
+[gain][gain] of the amplifier. In this case, I chose a value of 2.2 kilohms for R3
+and 220 ohms for R4, giving the amplifier a gain of 10x.
+
+**C2**'s effect is subtle: Its purpose is to ensure that the negative feedback provided
+by R4 only provides feedback of the AC (sound) signal. In effect, it makes R4 invisible
+to the circuit for DC voltages, but allows it to provide its feedback effect to AC
+signals.
+
+**C3** performs the reverse effect as C1, filtering out the DC part of the transistor's
+output signal so the AC (sound) component can be passed on to the next part of the
+circuit. In transistor amplifiers, it's very common to have have multiple amplification
+"stages", and the capacitor allows only the AC part of the signal to be passed on.
+In this case, we're only using one stage, so C3 may or may not be as necessary, but
+it's good practice to put it in.
+
+### How I Picked Component Values
+
+You might be wondering how I picked these component values. The answer is that, although
+there are many formulas for designing transistor amplifiers, I chose to use a couple
+of basic rules of thumb, and then just simulated the circuit to see how it would work
+in practice. (I used [iCircuit][icircuit] for my simulations here, but the free
+package [LTSpice][ltspice] is great too.)
+
+- For **R1** and **R2**, you want to pick values (with [ohm's law][ohmslaw]) such
+  that the current on the base of the transistor is sufficiently high to activate
+  the transistor. For stability of your circuit, you want the value of R1 to be about
+  twice that of R2. I picked 1 kilohm for R1 and 470 ohms for R2. The precise values
+  matter much less than the ratio, since this is a [voltage divider][vdivider]; I
+  picked these values because I had them around.
+  
+- The ratio of **R3** and **R4** determines the gain of the amplifier circuit. The
+  precise values here are also less important than the ratio. I picked 2.2 kilohms
+  and 220 ohms to give my amplifier a gain of 10x.
+  
+- **C1** and **C2** can be relatively small; 0.1 microfarads (100 picofarads) is
+  a reasonable value. **C3** should be larger, and large enough to ensure that the
+  DC component of the signal is filtered. 220 to 470 microfarads is a good range of
+  reasonable values; I picked 220 microfarads somewhat arbitrarily.
+  
+Before we build this up on a breadboard, let's simulate it and see how it performs.
+
+### Simulating the Circuit
+
+After I created the circuit in [iCircuit][icircuit], the next step was to simulate
+it and see how it performed. The first step was to add two small "flags" to the
+schematic diagram at the places I wanted to monitor.
+
+I labelled the voltage right out of the microphone as `sIn`, and the output voltage 
+from the amplifier as `sOut`. Then I turned on the virtual oscilloscope and went to
+check the results:
+
+![Virtual oscilloscope simulation of the circuit](simple-amp-oscope-small.jpg)
+
+Well, that looks promising!
+
+- The signal at `sIn` (the voltage coming out of the microphone) is about 5.72 mV
+  [RMS][rms] (the "instantaneous voltage" for my simulated sound signal), and it has a  
+  peak-to-peak voltage of about 76 mV. That's about what I'd expect.
+  
+- The signal at `sOut` (the output of the amplifier) has an instantaneous [RMS][rms]
+  voltage of about 1.7 volts. That should be plenty of signal to show on our
+  oscilloscope.
+  
+In our simulation, the waveforms of `sIn` and `sOut` are exactly the same. This is
+actually _not_ what I'd expect here. The circuit we've designed is technically an
+[inverting amplifier][invamp], so I'd expect that the output waveform would be 180
+degrees out of phase with the input signal -- the output signal should be low when 
+the input signal is high and vice versa. This could be a weirdness of 
+[iCircuit][icircuit], or there could be something I don't understand here. We'll see
+how it behaves when we build it up.
+
+## Building the Circuit
+
+The next step in the process is going to be actually prototyping the circuit with
+real components. That'll be the next update, so check back soon for more!
+
 
 [aliexpress]: https://www.aliexpress.com/
 [cortexm3]: https://www.st.com/content/st_com/en/arm-32-bit-microcontrollers/arm-cortex-m3.html
@@ -152,4 +288,15 @@ that, so check back soon for the rest of the project!
 [stm32]: https://www.st.com/en/microcontrollers-microprocessors/stm32-mainstream-mcus.html
 [stm32f103]: https://www.st.com/en/microcontrollers-microprocessors/stm32f103.html
 [tl084]: https://www.ti.com/product/TL084
-
+[2n3904]: https://www.onsemi.com/pdf/datasheet/2n3903-d.pdf
+[vdivider]: https://en.wikipedia.org/wiki/Voltage_divider
+[inductor]: https://en.wikipedia.org/wiki/Inductor
+[capacitor]: https://en.wikipedia.org/wiki/Capacitor
+[biasv]: https://en.wikipedia.org/wiki/Biasing
+[gain]: https://en.wikipedia.org/wiki/Gain_(electronics)
+[linearity]: https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-dc-circuit-analysis/a/ee-linearity
+[icircuit]: https://icircuitapp.com/
+[ltspice]: https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html
+[ohmslaw]: https://en.wikipedia.org/wiki/Ohm%27s_law
+[rms]: https://www.electronics-tutorials.ws/accircuits/rms-voltage.html
+[invamp]: https://www.electronics-tutorials.ws/opamp/opamp_2.html
