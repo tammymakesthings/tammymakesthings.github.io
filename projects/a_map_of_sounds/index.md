@@ -159,7 +159,7 @@ So I watched a bunch of YouTube videos about transistor amplifiers, and came
 up with a circuit both that would work and whose functions I could explain.
 Here's what I came up with:
 
-![Transistor amplifier schematic diagram](single-amp-circuit-rev2.jpg)
+![Transistor amplifier schematic diagram](amplifier-circuit.jpg)
 
 ### How Does This Circuit Work?
 
