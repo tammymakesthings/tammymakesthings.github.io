@@ -276,7 +276,7 @@ how it behaves when we build it up.
 ## Building the Circuit
 
 The next step in the process is going to be actually prototyping the circuit with
-real components. That'll be the next update, so check back soon for more!
+real components. That's what we'll tackle in [part 2](part2/)
 
 
 [aliexpress]: https://www.aliexpress.com/
